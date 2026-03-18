@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Jean-Baptiste Noblet</title>
+  <meta name="description" content="Curriculum Vitae de Jean-Baptiste Noblet — à télécharger en PDF." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html"         data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html"         data-i18n="nav.about">À propos</a></li>
+        <li><a href="competences.html"   data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="projets/index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="parcours.html"      data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="cv.html"            data-i18n="nav.cv">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html"         data-i18n="nav.home">Accueil</a>
+    <a href="about.html"         data-i18n="nav.about">À propos</a>
+    <a href="competences.html"   data-i18n="nav.skills">Compétences</a>
+    <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+    <a href="parcours.html"      data-i18n="nav.parcours">Parcours</a>
+    <a href="cv.html"            data-i18n="nav.cv">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 data-i18n="cv.title">Mon CV</h2>
+          <p data-i18n="cv.subtitle">Téléchargez mon curriculum vitae complet</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="cv-layout">
+          <!-- Actions -->
+          <div class="reveal">
+            <div class="card" style="padding:28px; margin-bottom:16px;">
+              <h3 style="color:var(--text); margin-bottom:8px;">Jean-Baptiste Noblet</h3>
+              <p style="margin-bottom:4px;">BTS SIO option SLAM</p>
+              <p style="margin-bottom:20px;">En recherche d'alternance</p>
+              <div class="divider" style="margin:20px 0;"></div>
+              <ul class="contact-list" style="margin-bottom:20px;">
+                <li><span>📧</span><a href="mailto:nobletjeanbaptiste@gmail.com">nobletjeanbaptiste@gmail.com</a></li>
+                <li><span>📱</span><a href="tel:+33673081881">06 73 08 18 81</a></li>
+                <li><span>📍</span><span>Vannes, Morbihan (56)</span></li>
+              </ul>
+              <div class="cv-actions">
+                <a
+                  href="CV_JEAN BAPTISTE_NOBLET.pdf"
+                  download="CV_Jean-Baptiste_Noblet.pdf"
+                  class="btn btn-primary"
+                  data-i18n="cv.download"
+                >
+                  ⬇ Télécharger le CV (PDF)
+                </a>
+                <a
+                  href="CV_JEAN BAPTISTE_NOBLET.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline"
+                  data-i18n="cv.view"
+                >
+                  👁 Voir en plein écran
+                </a>
+              </div>
+            </div>
+
+            <!-- Résumé des points clés -->
+            <div class="card">
+              <h4 style="color:var(--text); margin-bottom:14px; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">Points clés</h4>
+              <ul style="display:flex; flex-direction:column; gap:10px;">
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>🎓</span>
+                  <span>BTS SIO SLAM — AFTEC Vannes (en cours)</span>
+                </li>
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>🎓</span>
+                  <span>Licence Math Informatique — UBS Vannes</span>
+                </li>
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>🏢</span>
+                  <span>Stage DSDEN du Morbihan — 10 semaines</span>
+                </li>
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>⚡</span>
+                  <span>12+ technologies maîtrisées</span>
+                </li>
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>🌍</span>
+                  <span>Français, Anglais, Espagnol</span>
+                </li>
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>🚗</span>
+                  <span>Permis B — véhiculé</span>
+                </li>
+                <li style="font-size:0.88rem; color:var(--text-muted); display:flex; gap:10px;">
+                  <span>💰</span>
+                  <span>Contrat éligible aide à l'embauche (5 000 €)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Aperçu PDF -->
+          <div class="reveal reveal-delay-2">
+            <div class="cv-preview">
+              <iframe
+                src="CV_JEAN BAPTISTE_NOBLET.pdf"
+                width="100%"
+                height="800"
+                style="border:none; display:block; border-radius: var(--r);"
+                title="Aperçu du CV de Jean-Baptiste Noblet"
+              >
+                <p style="padding:20px; color:var(--text-muted); text-align:center;">
+                  Votre navigateur ne supporte pas l'aperçu PDF.
+                  <a href="CV_JEAN BAPTISTE_NOBLET.pdf" download>Téléchargez le CV ici.</a>
+                </p>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong data-i18n="footer.copy">Jean-Baptiste Noblet — Portfolio</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html"         data-i18n="nav.about">À propos</a>
+        <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+        <a href="cv.html"            data-i18n="nav.cv">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="js/translate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

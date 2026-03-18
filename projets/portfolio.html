@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html"       data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html"       data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html"          data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html"    data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html"          data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html"       data-i18n="nav.home">Accueil</a>
+    <a href="../about.html"       data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html"          data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html"    data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html"          data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="project-detail-header reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:16px;">
+          <span style="font-size:3rem;">💼</span>
+          <div>
+            <div class="mono text-muted" style="font-size:0.85rem; margin-bottom:4px;">HTML · CSS · JavaScript · BTS SIO</div>
+            <h1 style="font-size:clamp(1.6rem, 4vw, 2.5rem);">Portfolio personnel</h1>
+          </div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span class="tag tag-blue">HTML</span>
+          <span class="tag tag-blue">CSS</span>
+          <span class="tag tag-blue">JavaScript</span>
+          <span class="tag tag-green">Responsive</span>
+          <span class="tag tag-purple">Bilingue FR/EN</span>
+          <span class="tag tag-yellow">2024–2026</span>
+          <span class="tag tag-orange">En cours</span>
+        </div>
+      </div>
+
+      <div class="detail-layout">
+        <div class="detail-content reveal">
+          <h3>Présentation</h3>
+          <p>
+            Ce portfolio est l'un des projets phares du BTS SIO SLAM. Il a pour but de présenter mon profil, mes compétences et mes réalisations à de futurs employeurs ou recruteurs.
+          </p>
+          <p>
+            Développé entièrement en HTML, CSS et JavaScript vanilla (sans framework), il met en œuvre des bonnes pratiques modernes du développement web.
+          </p>
+
+          <h3>Fonctionnalités</h3>
+          <ul>
+            <li>Architecture multi-pages avec navigation cohérente</li>
+            <li>Design responsive (mobile, tablette, desktop)</li>
+            <li>Système de traduction bilingue FR/EN (localStorage)</li>
+            <li>Animations au scroll (Intersection Observer API)</li>
+            <li>Animations de barres de compétences</li>
+            <li>Filtre des projets par catégorie</li>
+            <li>Animation de typing dans le hero</li>
+            <li>Menu hamburger pour mobile</li>
+            <li>Bannière de gestion des cookies</li>
+            <li>Aperçu et téléchargement du CV PDF</li>
+          </ul>
+
+          <h3>Choix techniques</h3>
+          <ul>
+            <li>Zéro dépendance : HTML/CSS/JS pur, pas de framework</li>
+            <li>CSS custom properties (variables) pour la cohérence visuelle</li>
+            <li>Google Fonts (Inter + JetBrains Mono)</li>
+            <li>Thème sombre inspiré des interfaces de développeur</li>
+            <li>Accessibilité : balises sémantiques, aria-labels, focus visible</li>
+          </ul>
+        </div>
+
+        <aside class="detail-meta reveal reveal-delay-2">
+          <div class="meta-card card">
+            <h4>Informations</h4>
+            <ul class="meta-list">
+              <li><span>📅</span> 2024 – 2026 (en cours)</li>
+              <li><span>🏫</span> AFTEC Vannes</li>
+              <li><span>📚</span> BTS SIO SLAM</li>
+              <li><span>👤</span> Projet individuel</li>
+            </ul>
+          </div>
+          <div class="meta-card card">
+            <h4>Technologies</h4>
+            <div class="tools-grid">
+              <span class="tag tag-blue">HTML5</span>
+              <span class="tag tag-blue">CSS3</span>
+              <span class="tag tag-blue">JavaScript</span>
+              <span class="tag tag-green">Responsive</span>
+              <span class="tag tag-purple">i18n</span>
+            </div>
+          </div>
+          <a href="../index.html" class="btn btn-primary" style="width:100%; justify-content:center;">Voir le portfolio</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong data-i18n="footer.copy">Jean-Baptiste Noblet — Portfolio</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html"    data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html"    data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

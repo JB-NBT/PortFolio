@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site DRASI — Stage Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="proj-detail-top reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="margin-bottom:14px;">
+          <span class="tag tag-lime" style="display:inline-block; margin-bottom:10px;">Stage — DSDEN du Morbihan · Dossier E5</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;">En cours</span>
+        </div>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Site vitrine DRASI</h1>
+        <p style="max-width:640px; font-size:1rem;">
+          Site web institutionnel de présentation de la DRASI (Direction des Ressources et Appui aux Systèmes d'Information) du Morbihan — équipe IT de la DSDEN sous l'académie de Rennes.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+          <span class="tag tag-blue">HTML5 / CSS3</span>
+          <span class="tag tag-blue">JavaScript</span>
+          <span class="tag tag-blue">PHP</span>
+          <span class="tag tag-gray">Leaflet.js</span>
+          <span class="tag tag-gray">Git / GitHub</span>
+        </div>
+      </div>
+
+      <div class="detail-grid reveal">
+        <div class="detail-content">
+
+          <h3>Contexte</h3>
+          <p>
+            Développé lors d'un stage de 6 semaines à la DSDEN du Morbihan, ce site a été réalisé en binôme (deux stagiaires BTS SIO) sous la supervision du Responsable DSI. Le projet constitue le Dossier E5 du BTS SIO SLAM.
+          </p>
+          <p>
+            Objectif : créer un site vitrine 100% statique (HTML/CSS/JS vanilla + PHP pour le formulaire) présentant l'équipe, les missions, le périmètre d'intervention et les services de la DRASI. Conformité obligatoire avec la charte graphique de l'Académie de Rennes.
+          </p>
+
+          <h3>Pages réalisées</h3>
+          <ul>
+            <li>Accueil — présentation générale de la DRASI</li>
+            <li>Notre histoire — historique du service (ex-DSII)</li>
+            <li>Nos équipes — membres et rôles</li>
+            <li>Nos missions — périmètre d'intervention</li>
+            <li>Notre périmètre — carte interactive (Leaflet.js)</li>
+            <li>Services opérés — liste des services gérés</li>
+            <li>Comitologie — gouvernance</li>
+            <li>Nous contacter — formulaire sécurisé (reCAPTCHA v2 + PHP)</li>
+          </ul>
+
+          <h3>Points techniques notables</h3>
+          <ul>
+            <li>Architecture composants : header, footer et cookie banner chargés via <code style="font-family:'JetBrains Mono',monospace; color:var(--accent); font-size:0.85em;">fetch()</code> pour éviter la duplication</li>
+            <li>Carte interactive du périmètre géographique avec <strong style="color:var(--text)">Leaflet.js</strong></li>
+            <li>Formulaire de contact sécurisé : reCAPTCHA v2, validation PHP côté serveur, envoi par <code style="font-family:'JetBrains Mono',monospace; color:var(--accent); font-size:0.85em;">mail()</code></li>
+            <li>Système d'analytics maison (RGPD-compliant) : pages visitées, temps passé, sources — stockage localStorage, export CSV</li>
+            <li>Conformité charte graphique Académie de Rennes (couleurs, typos, logo Marianne)</li>
+            <li>Tests multi-navigateurs : Chrome, Firefox, Edge, Safari — audit Lighthouse</li>
+            <li>Déploiement Apache 2.4 Linux en production, versionné sur GitHub</li>
+            <li>Accessibilité : balises sémantiques, contrastes WCAG, navigation clavier</li>
+          </ul>
+
+          <h3>Sécurité</h3>
+          <ul>
+            <li>HTTPS avec certificat SSL, cookies httpOnly + SameSite</li>
+            <li>Headers Apache : X-Frame-Options, X-XSS-Protection, Content-Security-Policy</li>
+            <li>reCAPTCHA v2 sur le formulaire de contact</li>
+            <li>Validation double : client (HTML5) + serveur (PHP)</li>
+          </ul>
+
+          <h3>Aperçus du projet</h3>
+          <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <div>
+              <img src="../assets/img/stage/DRASI1.png" alt="Page d'accueil du site DRASI" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Page d'accueil — charte Académie de Rennes</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/DRASI2.png" alt="Page Nos Missions" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Page Nos Missions</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/DRASI3MAP.png" alt="Carte interactive Leaflet.js — EPLE du Morbihan" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Carte Leaflet.js — 65 EPLE du Morbihan</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/DRASIFOOTER.png" alt="Section équipe et footer du site DRASI" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Section équipe &amp; footer</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <aside class="detail-sidebar">
+          <div class="card meta-box">
+            <h4>Infos projet</h4>
+            <div class="meta-rows">
+              <div class="meta-row"><span>📅</span><span>Déc. 2024 – Jan. 2025 (6 sem.)</span></div>
+              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan — DRASI</span></div>
+              <div class="meta-row"><span>📍</span><span>Vannes (56)</span></div>
+              <div class="meta-row"><span>👥</span><span>2 stagiaires BTS SIO</span></div>
+              <div class="meta-row"><span>👔</span><span>Commanditaire : Responsable DSI</span></div>
+              <div class="meta-row"><span>🎓</span><span>Dossier E5 — BTS SIO SLAM</span></div>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Stack</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              <span class="tag tag-blue">HTML5</span>
+              <span class="tag tag-blue">CSS3</span>
+              <span class="tag tag-blue">JavaScript ES6+</span>
+              <span class="tag tag-blue">PHP 7.4+</span>
+              <span class="tag tag-gray">Leaflet.js</span>
+              <span class="tag tag-gray">reCAPTCHA v2</span>
+              <span class="tag tag-gray">Apache</span>
+              <span class="tag tag-gray">Git / GitHub</span>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Autres projets de stage</h4>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <a href="stage-grr.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">GRR →</a>
+              <a href="stage-nommage.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Nommage des postes →</a>
+              <a href="stage-remp.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">REMP →</a>
+            </div>
+          </div>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><p><strong>Jean-Baptiste Noblet</strong></p><p data-i18n="footer.made">Fait avec HTML / CSS / JS</p></div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

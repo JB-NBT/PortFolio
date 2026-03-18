@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REMP — Stage Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="proj-detail-top reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="margin-bottom:14px;">
+          <span class="tag tag-lime" style="display:inline-block; margin-bottom:8px;">Stage — DSDEN du Morbihan</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:8px; margin-left:6px;">Priorité haute</span>
+          <span class="tag tag-gray" style="display:inline-block; margin-bottom:8px; margin-left:6px;">Projet inachevé</span>
+        </div>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">REMP — Gestion des remplacements</h1>
+        <p style="max-width:640px; font-size:1rem;">Service Grist pour centraliser la gestion des remplacements d'enseignants du 1er degré public dans le Morbihan, en remplacement des échanges Excel/mail quotidiens.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+          <span class="tag tag-gray">Grist</span>
+          <span class="tag tag-green">Python</span>
+          <span class="tag tag-gray">Gestion de données</span>
+        </div>
+      </div>
+
+      <!-- Bandeau inachevé -->
+      <div style="background:rgba(251,146,60,0.08); border:1px solid rgba(251,146,60,0.25); border-radius:var(--r); padding:16px 20px; margin-bottom:32px; display:flex; gap:12px; align-items:flex-start;" class="reveal">
+        <span style="font-size:1.2rem; flex-shrink:0;">⚠️</span>
+        <div>
+          <strong style="color:var(--orange); font-size:0.92rem;">Projet inachevé</strong>
+          <p style="margin-top:4px; font-size:0.88rem;">Ce projet n'a pas pu être finalisé en raison de contraintes budgétaires et matérielles du service commanditaire. La conception et l'architecture ont été livrées, mais le déploiement complet n'a pas pu être effectué dans les délais du stage.</p>
+        </div>
+      </div>
+
+      <div class="detail-grid reveal">
+        <div class="detail-content">
+
+          <h3>Contexte &amp; problème</h3>
+          <p>
+            Les circonscriptions géraient les remplacements d'enseignants via des échanges de mails quotidiens et des fichiers Excel. Ce système était chronophage, sujet aux erreurs et difficile à suivre pour la direction générale.
+          </p>
+          <p>
+            Projet réalisé en binôme (deux stagiaires BTS SIO) sous la direction du Responsable Adjoint DSI. La deadline était le départ du commanditaire (juillet 2025).
+          </p>
+
+          <h3>Ce qui a été réalisé</h3>
+          <ul>
+            <li>Analyse des besoins avec le commanditaire (Responsable DSI)</li>
+            <li>Conception de l'architecture de données dans Grist</li>
+            <li>Création des tables de référence (circonscriptions, BD, départements)</li>
+            <li>Formulaires de saisie par circonscription</li>
+            <li>Structure de la table synthèse pour la direction générale</li>
+            <li>Prototype de gestion des droits utilisateurs</li>
+            <li>Documentation technique partielle et guide utilisateur</li>
+          </ul>
+
+          <h3>Ce qui n'a pas pu être livré</h3>
+          <ul>
+            <li>Déploiement complet sur l'infrastructure Toutatice de l'EN</li>
+            <li>Intégration avec les outils existants (manque de ressources matérielles)</li>
+            <li>Tests utilisateurs avec le personnel des circonscriptions</li>
+            <li>Recette finale par le commanditaire</li>
+          </ul>
+
+          <h3>Ce que j'ai appris</h3>
+          <p>
+            Au-delà des aspects techniques, ce projet m'a confronté à la réalité des projets en entreprise : les contraintes budgétaires et organisationnelles peuvent bloquer un projet techniquement viable. Gestion des priorités, communication avec le commanditaire, adaptation face aux imprévus.
+          </p>
+
+        </div>
+
+        <aside class="detail-sidebar">
+          <div class="card meta-box">
+            <h4>Infos projet</h4>
+            <div class="meta-rows">
+              <div class="meta-row"><span>📅</span><span>Juillet 2025 (~13 jours prévus)</span></div>
+              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan — DSI</span></div>
+              <div class="meta-row"><span>👥</span><span>2 stagiaires BTS SIO</span></div>
+              <div class="meta-row"><span>⚠️</span><span>Priorité haute — inachevé</span></div>
+              <div class="meta-row"><span>❌</span><span>Arrêt : contraintes budgétaires et matérielles</span></div>
+              <div class="meta-row"><span>🎓</span><span>BTS SIO SLAM — AFTEC</span></div>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Stack prévue</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              <span class="tag tag-gray">Grist</span>
+              <span class="tag tag-green">Python</span>
+              <span class="tag tag-gray">Gestion des droits</span>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Autres projets de stage</h4>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <a href="stage-drasi.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Site DRASI →</a>
+              <a href="stage-grr.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">GRR →</a>
+              <a href="stage-nommage.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Nommage des postes →</a>
+            </div>
+          </div>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><p><strong>Jean-Baptiste Noblet</strong></p><p data-i18n="footer.made">Fait avec HTML / CSS / JS</p></div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

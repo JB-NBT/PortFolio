@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nommage des postes — Stage Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="proj-detail-top reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="margin-bottom:14px;">
+          <span class="tag tag-lime" style="display:inline-block; margin-bottom:8px;">Stage — DSDEN du Morbihan</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:8px; margin-left:6px;">Priorité haute</span>
+        </div>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Nommage des postes</h1>
+        <p style="max-width:640px; font-size:1rem;">Outil de génération automatique de noms de postes informatiques via Grist + Python, pour remplacer la saisie manuelle sujette aux erreurs dans les établissements du Morbihan.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+          <span class="tag tag-green">Python</span>
+          <span class="tag tag-gray">Grist</span>
+          <span class="tag tag-gray">PowerShell</span>
+          <span class="tag tag-gray">Active Directory</span>
+        </div>
+      </div>
+
+      <div class="detail-grid reveal">
+        <div class="detail-content">
+
+          <h3>Contexte &amp; problème</h3>
+          <p>
+            Les techniciens de la DSDEN nommaient manuellement chaque nouveau poste informatique lors de son intégration au réseau. Cette opération était source d'erreurs (fautes de frappe, doublons, incohérences avec l'inventaire). Le service avait besoin d'un outil automatisé respectant les conventions de nommage de l'Éducation Nationale.
+          </p>
+          <p>
+            Projet réalisé en binôme avec un autre stagiaire, sous la direction du Responsable Adjoint DSI. Priorité haute — service qui n'existait pas auparavant.
+          </p>
+
+          <h3>Ce que j'ai réalisé</h3>
+          <ul>
+            <li>Apprentissage de <strong style="color:var(--text)">Grist</strong> — outil de base de données collaboratif hébergé sur Toutatice (EN)</li>
+            <li>Conception des tables de référence : OS, modèles matériels, circonscriptions, EPLE, département</li>
+            <li>Développement du formulaire de saisie Grist accessible aux techniciens</li>
+            <li>Formule Python dans Grist (<code style="font-family:'JetBrains Mono',monospace; color:var(--accent); font-size:0.85em;">generer_code_resu()</code>) pour générer automatiquement un nom unique</li>
+            <li>Logique d'incrémentation : le nom généré intègre le département, l'identifiant de circonscription et un numéro séquentiel auto-incrémenté sans doublon</li>
+            <li>Export CSV compatible MDT Web pour le déploiement Windows</li>
+            <li>Tests sur poste dédié, sessions de test par types d'utilisateurs</li>
+            <li>Documentation technique et guide utilisateur</li>
+          </ul>
+
+          <h3>La formule Python (Grist)</h3>
+          <p>
+            Le cœur du projet est une formule Python écrite directement dans Grist. Elle construit le nom du poste en :
+          </p>
+          <ul>
+            <li>Récupérant le numéro de département (56) et le nom de la circonscription</li>
+            <li>Extrayant les 3 derniers caractères du nom de circonscription et l'identifiant entre parenthèses</li>
+            <li>Parcourant toutes les entrées existantes pour collecter les numéros déjà utilisés dans le même groupe (même département + même circonscription)</li>
+            <li>Attribuant le plus petit numéro disponible (1–99, formaté en 2 chiffres)</li>
+            <li>Retournant le nom final : <code style="font-family:'JetBrains Mono',monospace; color:var(--accent); font-size:0.85em;">56-XXX-IDEN-01</code></li>
+          </ul>
+
+          <!-- Captures d'écran -->
+          <h3>Aperçus du projet</h3>
+          <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <div>
+              <img src="../assets/img/stage/nommage-form.png" alt="Formulaire de nommage PC" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Formulaire de saisie pour les techniciens</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/nommage-1.png" alt="Table Grist principale" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Vue principale — table des postes nommés</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/nommage-code.png" alt="Formule Python dans Grist" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Formule Python de génération automatique des noms</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/nommage-split.png" alt="Vue split Grist" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Vue combinée table + formulaire</p>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="detail-sidebar">
+          <div class="card meta-box">
+            <h4>Infos projet</h4>
+            <div class="meta-rows">
+              <div class="meta-row"><span>📅</span><span>Juillet 2025 (~10 jours)</span></div>
+              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan — DSI</span></div>
+              <div class="meta-row"><span>👥</span><span>2 stagiaires + Responsable Adjoint DSI</span></div>
+              <div class="meta-row"><span>⚠️</span><span>Priorité haute</span></div>
+              <div class="meta-row"><span>🎓</span><span>BTS SIO SLAM — AFTEC</span></div>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Stack</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              <span class="tag tag-green">Python (Grist formulas)</span>
+              <span class="tag tag-gray">Grist</span>
+              <span class="tag tag-gray">PowerShell</span>
+              <span class="tag tag-gray">Active Directory</span>
+              <span class="tag tag-gray">CSV / MDT</span>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Autres projets de stage</h4>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <a href="stage-drasi.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Site DRASI →</a>
+              <a href="stage-grr.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">GRR →</a>
+              <a href="stage-remp.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">REMP →</a>
+            </div>
+          </div>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><p><strong>Jean-Baptiste Noblet</strong></p><p data-i18n="footer.made">Fait avec HTML / CSS / JS</p></div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

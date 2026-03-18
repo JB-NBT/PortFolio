@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr;
+      gap: 48px;
+      align-items: start;
+      max-width: 900px;
+    }
+
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+    }
+    .contact-info-icon {
+      font-size: 1.2rem;
+      width: 22px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .contact-info-text .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 3px;
+    }
+    .contact-info-text .value {
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+    .contact-info-text a { color: var(--text); }
+    .contact-info-text a:hover { color: var(--accent); }
+
+    /* ── Formulaire ── */
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem;
+      padding: 11px 14px;
+      outline: none;
+      transition: border-color var(--t);
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--text-muted);
+    }
+    .form-group textarea { min-height: 130px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    .form-notice {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-left: 2px solid var(--border);
+      padding-left: 10px;
+      line-height: 1.5;
+    }
+
+    .form-success {
+      display: none;
+      background: rgba(74,222,128,0.08);
+      border: 1px solid rgba(74,222,128,0.2);
+      border-radius: var(--r);
+      padding: 16px 18px;
+      color: var(--green);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="projets/index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html" data-i18n="nav.home">Accueil</a>
+    <a href="about.html" data-i18n="nav.about">À propos</a>
+    <a href="competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+    <a href="parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="cv.html" data-i18n="nav.cv">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <section>
+      <div class="container">
+        <div class="section-header reveal" style="margin-bottom:52px;">
+          <div class="section-label">Prenons contact</div>
+          <h2>Me contacter</h2>
+          <p>Une question, une opportunité d'alternance ? Écrivez-moi directement.</p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- ── Infos de contact ── -->
+          <aside class="contact-info reveal">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div class="contact-info-text">
+                <div class="label">Email</div>
+                <div class="value"><a href="mailto:nobletjeanbaptiste@gmail.com">nobletjeanbaptiste@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📱</div>
+              <div class="contact-info-text">
+                <div class="label">Téléphone</div>
+                <div class="value"><a href="tel:+33673081881">06 73 08 18 81</a></div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-text">
+                <div class="label">Localisation</div>
+                <div class="value">Vannes, Morbihan (56)</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🚗</div>
+              <div class="contact-info-text">
+                <div class="label">Mobilité</div>
+                <div class="value">Permis B — véhiculé</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">💼</div>
+              <div class="contact-info-text">
+                <div class="label">Disponibilité</div>
+                <div class="value">En recherche d'alternance — contrat éligible aide de 5 000 €</div>
+              </div>
+            </div>
+
+            <a href="CV_JEAN BAPTISTE_NOBLET.pdf" download="CV_Jean-Baptiste_Noblet.pdf" class="btn btn-outline" style="justify-content:center;">
+              ⬇ Télécharger mon CV
+            </a>
+          </aside>
+
+          <!-- ── Formulaire ── -->
+          <div class="reveal reveal-delay-2">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Votre nom</label>
+                  <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">Entreprise (optionnel)</label>
+                  <input type="text" id="company" name="company" placeholder="Nom de l'entreprise" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Votre adresse email</label>
+                <input type="email" id="email" name="email" placeholder="vous@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Objet</label>
+                <input type="text" id="subject" name="subject" placeholder="Proposition d'alternance, question..." required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+              </div>
+
+              <p class="form-notice">
+                Ce formulaire ouvre votre client mail (Outlook, Thunderbird, Gmail...) avec les informations pré-remplies.
+              </p>
+
+              <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+                Envoyer le message →
+              </button>
+
+              <div class="form-success" id="formSuccess">
+                ✓ Votre client mail a été ouvert avec le message pré-rempli.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Jean-Baptiste Noblet</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html" data-i18n="nav.about">À propos</a>
+        <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+        <a href="cv.html" data-i18n="nav.cv">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="js/translate.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !subject || !message) return;
+
+      const to = 'nobletjeanbaptiste@gmail.com';
+      const fullSubject = encodeURIComponent(subject);
+      const body = encodeURIComponent(
+        `De : ${name}${company ? ' (' + company + ')' : ''}\n` +
+        `Email : ${email}\n\n` +
+        `${message}`
+      );
+
+      window.location.href = `mailto:${to}?subject=${fullSubject}&body=${body}`;
+
+      const success = document.getElementById('formSuccess');
+      success.style.display = 'block';
+      setTimeout(() => { success.style.display = 'none'; }, 5000);
+    });
+  </script>
+</body>
+</html>

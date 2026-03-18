@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mangatec — Dossier E6 · Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="proj-detail-top reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="margin-bottom:14px;">
+          <span class="tag tag-lime" style="display:inline-block; margin-bottom:10px;">BTS SIO SLAM — AFTEC · Dossier E6</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;">En cours</span>
+        </div>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Mangatec — Médiathèque de mangas</h1>
+        <p style="max-width:640px; font-size:1rem;">
+          Application web complète de gestion d'une médiathèque de mangas, développée avec Laravel 11 dans le cadre du dossier E6 du BTS SIO SLAM. Gestion multi-rôles, CRUD complet, architecture client/serveur virtualisée.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+          <span class="tag tag-blue">Laravel 11</span>
+          <span class="tag tag-blue">PHP 8.2</span>
+          <span class="tag tag-blue">MySQL 8.0</span>
+          <span class="tag tag-gray">Blade</span>
+          <span class="tag tag-gray">Spatie Permissions</span>
+          <span class="tag tag-gray">Ubuntu</span>
+        </div>
+      </div>
+
+      <div class="detail-grid reveal">
+        <div class="detail-content">
+
+          <h3>Contexte &amp; objectifs</h3>
+          <p>
+            Mangatec est une application web de gestion d'une médiathèque spécialisée dans les mangas (comics japonais). Ce projet constitue le <strong style="color:var(--text)">Dossier E6</strong> du BTS SIO SLAM, réalisé à l'AFTEC de Vannes.
+          </p>
+          <p>
+            L'objectif était de concevoir et déployer une application complète permettant aux membres d'une médiathèque de consulter et gérer le catalogue de mangas, avec des droits différenciés selon le rôle de l'utilisateur.
+          </p>
+
+          <h3>Fonctionnalités réalisées</h3>
+          <ul>
+            <li><strong style="color:var(--text)">UC1 — Authentification</strong> : inscription, connexion, déconnexion sécurisées (Laravel Breeze / Auth)</li>
+            <li><strong style="color:var(--text)">UC2 — Consultation du catalogue</strong> : liste des mangas, recherche par titre / auteur / genre, affichage détaillé</li>
+            <li><strong style="color:var(--text)">UC3 — Gestion du catalogue</strong> (modérateur / admin) : ajout, modification, suppression de mangas et de séries</li>
+            <li><strong style="color:var(--text)">UC4 — Administration</strong> (admin uniquement) : gestion des utilisateurs, attribution des rôles, supervision</li>
+          </ul>
+
+          <h3>Gestion des rôles (Spatie Laravel Permission)</h3>
+          <p>Trois niveaux d'accès distincts, gérés via le package Spatie Laravel Permission :</p>
+          <ul>
+            <li><strong style="color:var(--text)">User</strong> — consultation uniquement : lecture du catalogue, recherche</li>
+            <li><strong style="color:var(--text)">Modérateur</strong> — gestion éditoriale : ajout et modification des fiches mangas, gestion du catalogue</li>
+            <li><strong style="color:var(--text)">Administrateur</strong> — contrôle total : gestion des utilisateurs, attribution des rôles, administration complète</li>
+          </ul>
+
+          <h3>Architecture technique</h3>
+          <ul>
+            <li><strong style="color:var(--text)">Framework</strong> : Laravel 11 — architecture MVC, routes nommées, middlewares</li>
+            <li><strong style="color:var(--text)">Backend</strong> : PHP 8.2 — Eloquent ORM, relations Many-to-Many (mangas ↔ genres), migrations, seeders</li>
+            <li><strong style="color:var(--text)">Base de données</strong> : MySQL 8.0 — schéma relationnel complet</li>
+            <li><strong style="color:var(--text)">Templates</strong> : Blade — composants réutilisables, layouts partagés</li>
+            <li><strong style="color:var(--text)">Permissions</strong> : Spatie Laravel Permission — rôles et permissions en base de données</li>
+          </ul>
+
+          <h3>Infrastructure virtualisée</h3>
+          <p>
+            Le projet a été déployé en environnement virtualisé, reproduisant une architecture client/serveur réelle :
+          </p>
+          <ul>
+            <li><strong style="color:var(--text)">VM Serveur</strong> (Ubuntu Server) : Apache2, PHP 8.2, MySQL 8.0, application Laravel</li>
+            <li><strong style="color:var(--text)">VM Client</strong> (Ubuntu Desktop) : accès à l'application via navigateur</li>
+            <li>Connexion réseau local entre les VMs — simulation d'un environnement de production</li>
+          </ul>
+
+          <h3>Ce que j'ai appris</h3>
+          <ul>
+            <li>Prise en main de Laravel 11 : routing, controllers, models, Eloquent</li>
+            <li>Gestion des rôles et permissions avec Spatie — séparation nette des droits</li>
+            <li>Conception de schémas relationnels et migrations</li>
+            <li>Déploiement sur Apache Linux en environnement virtualisé</li>
+            <li>Rédaction de documentation technique (Dossier E6 BTS SIO)</li>
+          </ul>
+
+          <h3>Aperçus du projet</h3>
+          <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <div>
+              <img src="../assets/img/stage/Mangatec1.png" alt="Page d'accueil Mangatec — évolution V1 vers V2" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Page d'accueil — évolution V1 → V2</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/Mangatec2.png" alt="Ma Collection et vue Bibliothèque" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Vue Ma Collection &amp; Bibliothèque</p>
+            </div>
+            <div>
+              <img src="../assets/img/stage/Mangatec3.png" alt="Formulaire d'ajout de manga" loading="lazy" />
+              <p style="font-size:0.75rem; margin-top:6px; text-align:center;">Formulaire d'ajout de manga (V1 → V2)</p>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="detail-sidebar">
+          <div class="card meta-box">
+            <h4>Infos projet</h4>
+            <div class="meta-rows">
+              <div class="meta-row"><span>📅</span><span>2024 – 2025</span></div>
+              <div class="meta-row"><span>🏫</span><span>AFTEC Vannes</span></div>
+              <div class="meta-row"><span>🎓</span><span>Dossier E6 — BTS SIO SLAM</span></div>
+              <div class="meta-row"><span>👤</span><span>Projet individuel</span></div>
+              <div class="meta-row"><span>🖥️</span><span>2 VMs Ubuntu (client + serveur)</span></div>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Stack</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              <span class="tag tag-blue">Laravel 11</span>
+              <span class="tag tag-blue">PHP 8.2</span>
+              <span class="tag tag-blue">MySQL 8.0</span>
+              <span class="tag tag-gray">Blade</span>
+              <span class="tag tag-gray">Spatie Permissions</span>
+              <span class="tag tag-gray">Apache2</span>
+              <span class="tag tag-gray">Ubuntu</span>
+              <span class="tag tag-gray">Git / GitHub</span>
+            </div>
+          </div>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><p><strong>Jean-Baptiste Noblet</strong></p><p data-i18n="footer.made">Fait avec HTML / CSS / JS</p></div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

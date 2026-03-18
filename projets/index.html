@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets — Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label" data-i18n="projects.label">Réalisations</div>
+          <h2 data-i18n="projects.title">Mes projets</h2>
+          <p data-i18n="projects.subtitle">Projets universitaires, de stage et personnels</p>
+        </div>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all"     data-i18n="filter.all">Tous</button>
+          <button class="filter-btn"        data-filter="web"     data-i18n="filter.web">Web</button>
+          <button class="filter-btn"        data-filter="java"    data-i18n="filter.java">Java</button>
+          <button class="filter-btn"        data-filter="stage"   data-i18n="filter.stage">Stage</button>
+          <button class="filter-btn"        data-filter="game"    data-i18n="filter.game">Jeux / Mods</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ── STAGE ── -->
+          <a href="stage-drasi.html" class="project-card reveal" data-cat="stage">
+            <div class="proj-thumb-placeholder">🏫</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Stage · BTS SIO · DSDEN Morbihan</div>
+              <h3>Site web DRASI</h3>
+              <p>Site portfolio de l'équipe académique de Vannes (DSII). HTML/CSS/JS, conforme charte graphique de l'académie de Rennes.</p>
+              <div class="proj-tags">
+                <span class="tag tag-lime">Stage</span>
+                <span class="tag tag-blue">HTML/CSS/JS</span>
+                <span class="tag tag-gray">En équipe</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2024–2025</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="stage-grr.html" class="project-card reveal d1" data-cat="stage">
+            <div class="proj-thumb-placeholder">📅</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Stage · BTS SIO · DSDEN Morbihan</div>
+              <h3>GRR — Gestion de Réservations</h3>
+              <p>Déploiement et configuration d'un système GRR sur WAMP pour la réservation de ressources informatiques en réseau interne.</p>
+              <div class="proj-tags">
+                <span class="tag tag-lime">Stage</span>
+                <span class="tag tag-blue">PHP</span>
+                <span class="tag tag-blue">MySQL</span>
+                <span class="tag tag-gray">Réseau</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2024–2025</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="stage-nommage.html" class="project-card reveal d2" data-cat="stage">
+            <div class="proj-thumb-placeholder">🖥️</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Stage · BTS SIO · DSDEN Morbihan</div>
+              <h3>Nommage des postes</h3>
+              <p>Outil de nommage automatique des postes informatiques via Grist + Python/PowerShell. Priorité haute — avant c'était fait à la main.</p>
+              <div class="proj-tags">
+                <span class="tag tag-lime">Stage</span>
+                <span class="tag tag-green">Python</span>
+                <span class="tag tag-gray">PowerShell</span>
+                <span class="tag tag-gray">Grist</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2025</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="stage-remp.html" class="project-card reveal d3" data-cat="stage">
+            <div class="proj-thumb-placeholder">👩‍🏫</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Stage · BTS SIO · DSDEN Morbihan</div>
+              <h3>REMP — Gestion des remplacements</h3>
+              <p>Service Grist pour centraliser les remplacements des enseignants du 1er degré. Remplace les échanges Excel/mail des circonscriptions.</p>
+              <div class="proj-tags">
+                <span class="tag tag-lime">Stage</span>
+                <span class="tag tag-gray">Grist</span>
+                <span class="tag tag-green">Python</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2025</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ── WEB ── -->
+          <a href="mangatec.html" class="project-card reveal" data-cat="web">
+            <div class="proj-thumb-placeholder">📚</div>
+            <div class="proj-body">
+              <div class="proj-type mono">PHP · Laravel · BTS SIO</div>
+              <h3>Mangatec</h3>
+              <p>Application web de gestion d'une médiathèque de mangas. CRUD complet, auth, rôles, interface responsive. Projet BTS SIO SLAM.</p>
+              <div class="proj-tags">
+                <span class="tag tag-blue">Laravel</span>
+                <span class="tag tag-blue">PHP</span>
+                <span class="tag tag-blue">MySQL</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2024–2025</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="portfolio.html" class="project-card reveal d1" data-cat="web">
+            <div class="proj-thumb-placeholder">💼</div>
+            <div class="proj-body">
+              <div class="proj-type mono">HTML · CSS · JS · BTS SIO</div>
+              <h3>Portfolio</h3>
+              <p>Ce portfolio ! Multi-pages, responsive, bilingue FR/EN, animations CSS au scroll, zéro framework.</p>
+              <div class="proj-tags">
+                <span class="tag tag-blue">HTML</span>
+                <span class="tag tag-blue">CSS</span>
+                <span class="tag tag-blue">JavaScript</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2024–2025</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ── JAVA ── -->
+          <a href="splendor.html" class="project-card reveal" data-cat="java">
+            <div class="proj-thumb-placeholder">♟️</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Java · Jeu de plateau · Licence</div>
+              <h3>Projet Splendor</h3>
+              <p>Implémentation complète du jeu de société Splendor en Java. Gestion des joueurs, cartes, jetons, nobles et IA simple.</p>
+              <div class="proj-tags">
+                <span class="tag tag-blue">Java</span>
+                <span class="tag tag-green">OOP</span>
+                <span class="tag tag-gray">GitHub</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">2022–2024</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ── MODS MINECRAFT ── -->
+          <a href="minecraft-isle-of-berk.html" class="project-card reveal" data-cat="game">
+            <div class="proj-thumb-placeholder">🐉</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Java · Minecraft Forge · Mod</div>
+              <h3>Isle of Berk</h3>
+              <p>Mod Minecraft inspiré de "Dragons" (How to Train Your Dragon). Ajout de dragons apprivoisables, nouvelles îles, mécaniques de vol et de combat.</p>
+              <div class="proj-tags">
+                <span class="tag tag-orange">En cours</span>
+                <span class="tag tag-blue">Java</span>
+                <span class="tag tag-gray">Forge API</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">En cours</span>
+                <div class="wip-badge">WIP</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="minecraft-money-mod.html" class="project-card reveal d1" data-cat="game">
+            <div class="proj-thumb-placeholder">💰</div>
+            <div class="proj-body">
+              <div class="proj-type mono">Java · Minecraft Forge · Mod</div>
+              <h3>Money Mod</h3>
+              <p>Mod Minecraft ajoutant un système économique complet : monnaie, marchands, transactions entre joueurs et économie in-game.</p>
+              <div class="proj-tags">
+                <span class="tag tag-blue">Java</span>
+                <span class="tag tag-gray">Forge API</span>
+                <span class="tag tag-green">OOP</span>
+              </div>
+              <div class="proj-foot">
+                <span class="proj-year">Perso</span>
+                <span class="proj-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Jean-Baptiste Noblet</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

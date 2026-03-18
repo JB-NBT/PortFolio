@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isle of Berk — Mod Minecraft · Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="proj-detail-top reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="margin-bottom:14px;">
+          <div class="wip-badge" style="display:inline-flex; margin-bottom:10px;">En cours de développement</div>
+        </div>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Isle of Berk 🐉</h1>
+        <p style="max-width:640px; font-size:1rem;">
+          Mod Minecraft inspiré de l'univers <em>Dragons — Comment dresser votre dragon</em>. Ajout de dragons apprivoisables, de nouvelles îles à explorer, et de mécaniques de vol et de combat inédites.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+          <span class="tag tag-orange">En cours</span>
+          <span class="tag tag-blue">Java</span>
+          <span class="tag tag-gray">Minecraft Forge</span>
+          <span class="tag tag-gray">Projet perso</span>
+        </div>
+      </div>
+
+      <div class="detail-grid reveal">
+        <div class="detail-content">
+
+          <h3>Présentation</h3>
+          <p>
+            Isle of Berk est un projet personnel de mod Minecraft développé en Java avec l'API Minecraft Forge. Il s'inspire directement de l'univers de la franchise <strong style="color:var(--text)">DreamWorks Dragons</strong> (Comment dresser votre dragon) — dragons à apprivoiser, l'île de Beurk (Berk), personnages emblématiques.
+          </p>
+          <p>
+            Ce projet me permet d'approfondir ma maîtrise de la <strong style="color:var(--text)">programmation orientée objet en Java</strong> dans un contexte concret et stimulant, tout en explorant les API Forge pour créer du contenu de jeu original.
+          </p>
+
+          <h3>Fonctionnalités prévues / en cours</h3>
+          <ul>
+            <li>Ajout de plusieurs espèces de dragons (entités personnalisées)</li>
+            <li>Système d'apprivoisement et de montée en confiance</li>
+            <li>Mécanique de vol sur le dos des dragons</li>
+            <li>Attaques spéciales par espèce (feu, plasma, etc.)</li>
+            <li>Nouvelles îles générées procéduralement</li>
+            <li>Nouveau biome inspiré de l'archipel nordique</li>
+            <li>Craft d'équipements et de selles pour dragons</li>
+            <li>PNJ (personnages du film) avec dialogues</li>
+          </ul>
+
+          <h3>Ce que ça m'apporte techniquement</h3>
+          <ul>
+            <li>Maîtrise avancée des patterns OOP en Java (héritage, interfaces, génériques)</li>
+            <li>Compréhension de l'API Forge : registres, events, renderers</li>
+            <li>Gestion d'entités complexes (IA, pathfinding, états)</li>
+            <li>Travail avec des fichiers JSON (modèles 3D, recettes)</li>
+            <li>Gestion de projet en solo avec versioning Git</li>
+          </ul>
+
+          <h3>Statut actuel</h3>
+          <p>
+            Le projet est en développement actif. Les premières entités de dragons sont en cours d'implémentation avec leur système de comportement de base.
+          </p>
+
+        </div>
+
+        <aside class="detail-sidebar">
+          <div class="card meta-box">
+            <h4>Infos projet</h4>
+            <div class="meta-rows">
+              <div class="meta-row"><span>📅</span><span>En cours</span></div>
+              <div class="meta-row"><span>🎮</span><span>Projet personnel</span></div>
+              <div class="meta-row"><span>👤</span><span>Solo</span></div>
+              <div class="meta-row"><span>🎯</span><span>Minecraft Java Edition</span></div>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Stack</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              <span class="tag tag-blue">Java</span>
+              <span class="tag tag-gray">NeoForge</span>
+              <span class="tag tag-green">OOP</span>
+              <span class="tag tag-gray">JSON (modèles)</span>
+              <span class="tag tag-gray">Git</span>
+            </div>
+            <div style="margin-top:12px;">
+              <img src="../assets/img/neoforge.png" alt="NeoForge" style="height:32px; object-fit:contain; filter:brightness(0.9);" />
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Autre mod</h4>
+            <a href="minecraft-money-mod.html" class="btn btn-ghost" style="width:100%; justify-content:center; font-size:0.84rem;">Money Mod →</a>
+          </div>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><p><strong>Jean-Baptiste Noblet</strong></p><p data-i18n="footer.made">Fait avec HTML / CSS / JS</p></div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

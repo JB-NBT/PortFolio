@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — Jean-Baptiste Noblet</title>
+  <meta name="description" content="En savoir plus sur Jean-Baptiste Noblet : étudiant BTS SIO SLAM, ses langues, ses loisirs et ses coordonnées." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html"         data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html"         data-i18n="nav.about">À propos</a></li>
+        <li><a href="competences.html"   data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="projets/index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="parcours.html"      data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="cv.html"            data-i18n="nav.cv">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html"         data-i18n="nav.home">Accueil</a>
+    <a href="about.html"         data-i18n="nav.about">À propos</a>
+    <a href="competences.html"   data-i18n="nav.skills">Compétences</a>
+    <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+    <a href="parcours.html"      data-i18n="nav.parcours">Parcours</a>
+    <a href="cv.html"            data-i18n="nav.cv">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 data-i18n="about.title">À propos de moi</h2>
+          <p data-i18n="about.subtitle">Étudiant en reconversion passionné par le développement</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Sidebar -->
+          <aside class="about-sidebar reveal">
+            <div class="card" style="width:100%; max-width:260px;">
+              <h4 style="color:var(--text); margin-bottom:14px; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;">Contact</h4>
+              <ul class="contact-list">
+                <li>
+                  <span>📧</span>
+                  <a href="mailto:nobletjeanbaptiste@gmail.com">nobletjeanbaptiste@gmail.com</a>
+                </li>
+                <li>
+                  <span>📱</span>
+                  <a href="tel:+33673081881">06 73 08 18 81</a>
+                </li>
+                <li>
+                  <span>📍</span>
+                  <span>Vannes, Morbihan (56)</span>
+                </li>
+                <li>
+                  <span>🚗</span>
+                  <span>Permis B — véhiculé</span>
+                </li>
+                <li>
+                  <span>🎂</span>
+                  <span>27 ans</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="cv.html" class="btn btn-primary" style="width:100%; max-width:260px; justify-content:center;" data-i18n="cv.download">Télécharger mon CV</a>
+          </aside>
+
+          <!-- Main content -->
+          <div class="about-main">
+            <!-- Bio -->
+            <div class="reveal">
+              <h3>Qui suis-je ?</h3>
+              <div class="card" style="padding:20px 22px; display:flex; flex-direction:column; gap:12px;">
+                <p data-i18n="about.bio1">Passionné par l'informatique depuis toujours, j'ai d'abord été autodidacte avant de décider de reprendre mes études. Je suis actuellement en BTS SIO option SLAM à l'AFTEC de Vannes, en reconversion professionnelle.</p>
+                <p data-i18n="about.bio2">Pendant ma Licence Mathématiques Informatique à l'UBS, j'ai découvert la programmation orientée objet avec Java, Python, la logique avec SwiProlog, et le développement web. Mon stage à la DSDEN du Morbihan m'a permis d'appliquer ces compétences en situation réelle.</p>
+                <p data-i18n="about.bio3">Mon objectif : rejoindre une équipe dynamique en alternance pour développer mes compétences et contribuer à des projets concrets.</p>
+              </div>
+            </div>
+
+            <!-- Langues -->
+            <div class="reveal">
+              <h3>Langues</h3>
+              <div class="lang-grid">
+                <div class="card lang-card">
+                  <div class="lang-flag">🇫🇷</div>
+                  <div>
+                    <div class="lang-name">Français</div>
+                    <div class="lang-level">Langue maternelle</div>
+                  </div>
+                </div>
+                <div class="card lang-card">
+                  <div class="lang-flag">🇬🇧</div>
+                  <div>
+                    <div class="lang-name">Anglais</div>
+                    <div class="lang-level">Niveau intermédiaire</div>
+                  </div>
+                </div>
+                <div class="card lang-card">
+                  <div class="lang-flag">🇪🇸</div>
+                  <div>
+                    <div class="lang-name">Espagnol</div>
+                    <div class="lang-level">Niveau intermédiaire</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Savoir-être -->
+            <div class="reveal">
+              <h3>Savoir-être</h3>
+              <div class="soft-skills-grid">
+                <div class="card soft-skill"><span>⚡</span> Réactif</div>
+                <div class="card soft-skill"><span>💡</span> Proactif</div>
+                <div class="card soft-skill"><span>🗣️</span> Force de proposition</div>
+                <div class="card soft-skill"><span>🤝</span> Esprit d'équipe</div>
+                <div class="card soft-skill"><span>🎯</span> Motivé</div>
+                <div class="card soft-skill"><span>🔄</span> Adaptable</div>
+              </div>
+            </div>
+
+            <!-- Loisirs -->
+            <div class="reveal">
+              <h3>Centres d'intérêt</h3>
+              <div class="hobbies-grid">
+                <div class="card hobby-card">
+                  <div class="hobby-icon">🏸</div>
+                  <strong>Badminton</strong>
+                  <p>Pratique compétitive — 10 ans</p>
+                </div>
+                <div class="card hobby-card">
+                  <div class="hobby-icon">🎹</div>
+                  <strong>Piano</strong>
+                  <p>10 ans de pratique</p>
+                </div>
+                <div class="card hobby-card">
+                  <div class="hobby-icon">🧗</div>
+                  <strong>Escalade</strong>
+                  <p>3 ans de pratique</p>
+                </div>
+                <div class="card hobby-card">
+                  <div class="hobby-icon">✈️</div>
+                  <strong>Voyages</strong>
+                  <p>Écosse, Espagne, Angleterre, Portugal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong data-i18n="footer.copy">Jean-Baptiste Noblet — Portfolio</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html"         data-i18n="nav.about">À propos</a>
+        <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+        <a href="cv.html"            data-i18n="nav.cv">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="js/translate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

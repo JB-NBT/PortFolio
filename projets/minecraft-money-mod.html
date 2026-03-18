@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money Mod — Mod Minecraft · Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="../competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="../parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="../cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../about.html" data-i18n="nav.about">À propos</a>
+    <a href="../competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="index.html" data-i18n="nav.projects">Projets</a>
+    <a href="../parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="../cv.html" data-i18n="nav.cv">CV</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="container">
+
+      <div class="proj-detail-top reveal">
+        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <div style="margin-bottom:14px;">
+          <span class="tag tag-gray" style="display:inline-block; margin-bottom:10px;">Projet personnel · Minecraft Forge</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;">En développement</span>
+        </div>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Money Mod 💰</h1>
+        <p style="max-width:640px; font-size:1rem;">
+          Mod Minecraft ajoutant un système économique complet : monnaie physique, marchands PNJ, transactions entre joueurs et économie in-game configurable.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+          <span class="tag tag-blue">Java</span>
+          <span class="tag tag-gray">Minecraft Forge</span>
+          <span class="tag tag-green">OOP</span>
+          <span class="tag tag-gray">Projet perso</span>
+        </div>
+      </div>
+
+      <div class="detail-grid reveal">
+        <div class="detail-content">
+
+          <h3>Présentation</h3>
+          <p>
+            Money Mod ajoute à Minecraft un vrai système économique qui n'existe pas nativement dans le jeu. L'idée de départ : permettre aux joueurs d'un serveur de commercer de manière structurée, avec une monnaie physique (pièces craftables) et des marchands PNJ.
+          </p>
+
+          <h3>Fonctionnalités</h3>
+          <ul>
+            <li>Ajout de pièces de monnaie (bronze, argent, or) — items craftables</li>
+            <li>Système de portefeuille par joueur (stockage de monnaie)</li>
+            <li>Marchands PNJ avec catalogue d'achats/ventes configurable</li>
+            <li>Transactions joueur-à-joueur via commandes ou interface</li>
+            <li>Historique des transactions (log)</li>
+            <li>Équilibrage économique configurable (taux de change, prix)</li>
+          </ul>
+
+          <h3>Architecture technique</h3>
+          <ul>
+            <li>Items personnalisés (pièces) avec logique de craft</li>
+            <li>Entités marchands avec inventaire et IA de base</li>
+            <li>Système de sauvegarde de données joueur (NBT / JSON)</li>
+            <li>Commandes custom enregistrées via Forge</li>
+            <li>Gestion des events Forge (interaction joueur, craft...)</li>
+          </ul>
+
+          <h3>Ce que ça m'apporte</h3>
+          <ul>
+            <li>Pratique de la gestion de données persistantes en Java</li>
+            <li>Conception d'un système complexe avec de nombreuses interactions</li>
+            <li>Expérience avec les registres Forge et le cycle de vie du mod</li>
+            <li>Pensée systémique : équilibrage et cohérence économique</li>
+          </ul>
+
+        </div>
+
+        <aside class="detail-sidebar">
+          <div class="card meta-box">
+            <h4>Infos projet</h4>
+            <div class="meta-rows">
+              <div class="meta-row"><span>🎮</span><span>Projet personnel</span></div>
+              <div class="meta-row"><span>👤</span><span>Solo</span></div>
+              <div class="meta-row"><span>🎯</span><span>Minecraft Java Edition</span></div>
+              <div class="meta-row"><span>⚙️</span><span>Minecraft Forge API</span></div>
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Stack</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              <span class="tag tag-blue">Java</span>
+              <span class="tag tag-gray">NeoForge</span>
+              <span class="tag tag-green">OOP</span>
+              <span class="tag tag-gray">NBT / JSON</span>
+              <span class="tag tag-gray">Git</span>
+            </div>
+            <div style="margin-top:12px;">
+              <img src="../assets/img/neoforge.png" alt="NeoForge" style="height:32px; object-fit:contain; filter:brightness(0.9);" />
+            </div>
+          </div>
+          <div class="card meta-box">
+            <h4>Autre mod</h4>
+            <a href="minecraft-isle-of-berk.html" class="btn btn-ghost" style="width:100%; justify-content:center; font-size:0.84rem;">Isle of Berk →</a>
+          </div>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><p><strong>Jean-Baptiste Noblet</strong></p><p data-i18n="footer.made">Fait avec HTML / CSS / JS</p></div>
+      <nav class="footer-links">
+        <a href="../about.html" data-i18n="nav.about">À propos</a>
+        <a href="index.html" data-i18n="nav.projects">Projets</a>
+        <a href="../cv.html" data-i18n="nav.cv">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+  <script src="../js/translate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

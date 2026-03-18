@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean-Baptiste Noblet — Portfolio</title>
+  <meta name="description" content="Portfolio de Jean-Baptiste Noblet, étudiant BTS SIO SLAM, développeur web en reconversion professionnelle à Vannes." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="projets/index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html">Accueil</a>
+    <a href="about.html" data-i18n="nav.about">À propos</a>
+    <a href="competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+    <a href="parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="cv.html" data-i18n="nav.cv">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-accent-blob"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-i18n="hero.label">Bienvenue sur mon portfolio</div>
+      <h1>
+        Jean-Baptiste<br><em>Noblet</em>
+      </h1>
+      <p class="hero-lead" data-i18n="hero.subtitle">
+        Étudiant en BTS SIO SLAM à Vannes, en reconversion professionnelle.<br>
+        Passionné de développement web et logiciel.
+      </p>
+      <div class="hero-typing mono">
+        <span
+          class="hero-typing-text"
+          data-phrases='["Étudiant BTS SIO SLAM","Développeur web","En recherche d&apos;alternance","Passionné d&apos;informatique"]'
+        ></span><span class="cursor"></span>
+      </div>
+      <div class="hero-cta">
+        <a href="projets/index.html" class="btn btn-primary" data-i18n="hero.cta1">Voir mes projets</a>
+        <a href="cv.html" class="btn btn-outline" data-i18n="hero.cta2">Télécharger mon CV</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      scroll
+    </div>
+  </section>
+
+  <!-- ══ NAVIGATION RAPIDE ══ -->
+  <section>
+    <div class="container">
+      <div class="qnav-grid reveal">
+        <a href="about.html" class="qnav-item">
+          <div class="qnav-num">01</div>
+          <div class="qnav-title" data-i18n="qnav.about">À propos</div>
+          <div class="qnav-sub" data-i18n="qnav.about.sub">Profil, langues, centres d'intérêt</div>
+          <div class="qnav-arrow">→</div>
+        </a>
+        <a href="competences.html" class="qnav-item">
+          <div class="qnav-num">02</div>
+          <div class="qnav-title" data-i18n="qnav.skills">Compétences</div>
+          <div class="qnav-sub" data-i18n="qnav.skills.sub">Langages, frameworks, outils</div>
+          <div class="qnav-arrow">→</div>
+        </a>
+        <a href="projets/index.html" class="qnav-item">
+          <div class="qnav-num">03</div>
+          <div class="qnav-title" data-i18n="qnav.projects">Projets</div>
+          <div class="qnav-sub" data-i18n="qnav.projects.sub">Réalisations scolaires et perso</div>
+          <div class="qnav-arrow">→</div>
+        </a>
+        <a href="parcours.html" class="qnav-item">
+          <div class="qnav-num">04</div>
+          <div class="qnav-title" data-i18n="qnav.parcours">Parcours</div>
+          <div class="qnav-sub" data-i18n="qnav.parcours.sub">Formation et expériences</div>
+          <div class="qnav-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Jean-Baptiste Noblet</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html" data-i18n="nav.about">À propos</a>
+        <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+        <a href="cv.html" data-i18n="nav.cv">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Gestion des cookies">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue. Aucune donnée personnelle n'est collectée ni transmise à des tiers.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="js/translate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

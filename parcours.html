@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcours — Jean-Baptiste Noblet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Parcours spécifique ── */
+    .parcours-section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .parcours-section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .parcours-block { margin-bottom: 72px; }
+    .parcours-block:last-child { margin-bottom: 0; }
+
+    .entry-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0 28px;
+    }
+    .entry-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      padding-top: 3px;
+      text-align: right;
+      line-height: 1.4;
+    }
+    .entry-body {
+      border-left: 1px solid var(--border);
+      padding-left: 28px;
+      padding-bottom: 36px;
+      position: relative;
+    }
+    .entry-body::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 5px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+      box-shadow: 0 0 0 2px rgba(200,245,66,0.2);
+    }
+    .entry-body.muted::before { background: #333; box-shadow: none; }
+    .entry-body:last-child { padding-bottom: 0; }
+    .entry-body:last-child { border-color: transparent; }
+
+    .entry-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .entry-org {
+      font-size: 0.88rem;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .entry-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .entry-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    @media (max-width: 600px) {
+      .entry-grid { grid-template-columns: 1fr; gap: 0; }
+      .entry-date { text-align: left; margin-bottom: 8px; }
+      .entry-body { padding-left: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="competences.html" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="projets/index.html" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="parcours.html" data-i18n="nav.parcours">Parcours</a></li>
+        <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-btn" id="langToggle">🌐 EN</button>
+        <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html" data-i18n="nav.home">Accueil</a>
+    <a href="about.html" data-i18n="nav.about">À propos</a>
+    <a href="competences.html" data-i18n="nav.skills">Compétences</a>
+    <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+    <a href="parcours.html" data-i18n="nav.parcours">Parcours</a>
+    <a href="cv.html" data-i18n="nav.cv">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <section>
+      <div class="container" style="max-width:820px;">
+
+        <div class="section-header reveal" style="margin-bottom:60px;">
+          <div class="section-label">Qui je suis</div>
+          <h2 data-i18n="parcours.title">Mon parcours</h2>
+          <p data-i18n="parcours.subtitle">Formation académique et expériences professionnelles</p>
+        </div>
+
+        <!-- ══ FORMATION ══ -->
+        <div class="parcours-block reveal">
+          <div class="parcours-section-label">Formation</div>
+
+          <div class="entry-grid">
+            <div class="entry-date">Sept. 2024<br>— en cours</div>
+            <div class="entry-body">
+              <div class="entry-title">BTS SIO option SLAM</div>
+              <div class="entry-org">AFTEC — Vannes (56)</div>
+              <div class="entry-desc">
+                Formation en Solutions Logicielles et Applications Métiers. Développement web (Laravel, PHP, HTML/CSS/JS), bases de données, réseaux, méthodes agiles. Stage de 10 semaines cumulées à la DSDEN du Morbihan.
+              </div>
+              <div class="entry-tags">
+                <span class="tag tag-lime">En cours</span>
+                <span class="tag tag-blue">Laravel · PHP · JS</span>
+                <span class="tag tag-gray">Stage DSDEN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-grid" style="margin-top:32px;">
+            <div class="entry-date">Sept. 2021<br>— Sept. 2024</div>
+            <div class="entry-body">
+              <div class="entry-title">Licence Mathématiques Informatique</div>
+              <div class="entry-org">UBS — Vannes (56)</div>
+              <div class="entry-desc">
+                Programmation orientée objet Java, algorithmique, Python, SwiProlog, développement web (HTML/CSS/PHP/JS), bases de données SQL. Projets notables : jeu Splendor en Java (projet de 2ème année, en trio, soutenance orale), Jeu de la vie Conway, TP web.
+              </div>
+              <div class="entry-tags">
+                <span class="tag tag-blue">Java · Python · SQL</span>
+                <span class="tag tag-gray">SwiProlog</span>
+                <span class="tag tag-gray">3 ans</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-grid" style="margin-top:32px;">
+            <div class="entry-date">2016–2018</div>
+            <div class="entry-body muted">
+              <div class="entry-title">1ère &amp; 2ème année de STAPS</div>
+              <div class="entry-org">UFR de Nantes (44)</div>
+            </div>
+          </div>
+
+          <div class="entry-grid" style="margin-top:32px;">
+            <div class="entry-date">2016</div>
+            <div class="entry-body muted">
+              <div class="entry-title">Baccalauréat Scientifique</div>
+              <div class="entry-org">Lycée Léonard de Vinci — Montaigu (85)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ EXPÉRIENCES ══ -->
+        <div class="parcours-block reveal">
+          <div class="parcours-section-label">Expériences professionnelles</div>
+
+          <div class="entry-grid">
+            <div class="entry-date">2024–2025<br>(cumulé)</div>
+            <div class="entry-body">
+              <div class="entry-title">Stagiaire Développement Informatique</div>
+              <div class="entry-org">DSDEN du Morbihan / DRASI — Vannes (56)</div>
+              <div class="entry-desc">
+                10 semaines cumulées. Développement d'un site vitrine institutionnel, déploiement d'un GRR (gestionnaire de réservations), outil de nommage automatique des postes (Grist + Python), service de gestion des remplacements (REMP).
+              </div>
+              <div class="entry-tags">
+                <span class="tag tag-lime">IT</span>
+                <span class="tag tag-blue">Web · Python · Grist</span>
+                <span class="tag tag-gray">Stage BTS SIO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry-grid" style="margin-top:32px;">
+            <div class="entry-date">Nov. 2022<br>— Mai 2024</div>
+            <div class="entry-body muted">
+              <div class="entry-title">Employé libre service / Caissier</div>
+              <div class="entry-org">Grande distribution — Plescop (56)</div>
+              <div class="entry-desc">Gestion de rayon, encaissement, relation client. Poste occupé en parallèle de la reprise d'études.</div>
+            </div>
+          </div>
+
+          <div class="entry-grid" style="margin-top:32px;">
+            <div class="entry-date">2019</div>
+            <div class="entry-body muted">
+              <div class="entry-title">Agent de fabrication agroalimentaire</div>
+              <div class="entry-org">Intérim — Vendée (85)</div>
+            </div>
+          </div>
+
+          <div class="entry-grid" style="margin-top:32px;">
+            <div class="entry-date">Oct. 2016<br>— Août 2018</div>
+            <div class="entry-body muted">
+              <div class="entry-title">Employé de rayon</div>
+              <div class="entry-org">Grande distribution — Montaigu (85)</div>
+              <div class="entry-desc">Accueil client, mise en rayon multi-rayons, gestion des imprévus. Expérience de 2 ans en parallèle des études.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ CTA ══ -->
+        <div class="reveal" style="display:flex; gap:12px; flex-wrap:wrap; padding-top:8px;">
+          <a href="cv.html" class="btn btn-primary">Télécharger mon CV</a>
+          <a href="contact.html" class="btn btn-outline">Me contacter</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Jean-Baptiste Noblet</strong></p>
+        <p data-i18n="footer.made">Fait avec HTML / CSS / JS</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html" data-i18n="nav.about">À propos</a>
+        <a href="projets/index.html" data-i18n="nav.projects">Projets</a>
+        <a href="cv.html" data-i18n="nav.cv">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-overlay" id="cookieOverlay"></div>
+  <div class="cookie-banner" id="cookieBanner">
+    <h3 data-i18n="cookie.title">Gestion des cookies</h3>
+    <p data-i18n="cookie.text">Ce site utilise localStorage pour mémoriser vos préférences de langue.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-ghost" id="refuseCookie" data-i18n="cookie.refuse">Refuser</button>
+      <button class="btn btn-primary" id="acceptCookie" data-i18n="cookie.accept">Accepter</button>
+    </div>
+  </div>
+
+  <script src="js/translate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
