@@ -596,7 +596,7 @@ section { padding: 80px 0; }
 }
 .proj-detail-top h1 {
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 .back-link {
   display: inline-flex;
