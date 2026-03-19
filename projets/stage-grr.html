@@ -57,31 +57,31 @@
 
           <h3>Contexte</h3>
           <p>
-            La DSDEN du Morbihan avait besoin d'un système centralisé pour que les équipes puissent réserver du matériel informatique (salles, équipements) sans passer par des échanges informels. J'ai déployé et configuré le logiciel open-source <strong style="color:var(--text)">GRR (Gestion et Réservation de Ressources)</strong>.
+            La DSDEN du Morbihan avait besoin d'un système centralisé pour que les équipes puissent réserver du matériel informatique (salles, équipements) sans passer par des échanges informels. J'ai déployé et configuré le logiciel open-source <strong>GRR (Gestion et Réservation de Ressources)</strong>.
           </p>
 
           <h3>Ce que j'ai fait</h3>
           <ul>
-            <li>Installation et configuration de <strong style="color:var(--text)">WAMP Server</strong> sur Windows 11 (serveur local)</li>
+            <li>Installation et configuration de <strong>WAMP Server</strong> sur Windows 11 (serveur local)</li>
             <li>Installation des prérequis Visual C++ Redistributable</li>
-            <li>Déploiement de GRR depuis GitHub (JeromeDevome/GRR) dans le répertoire <code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.85em;">/reservations</code></li>
-            <li>Création de la base de données MySQL <code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.85em;">grr</code> via phpMyAdmin</li>
-            <li>Configuration Apache pour accès réseau : modification de <code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.85em;">httpd.conf</code> et des VirtualHosts</li>
+            <li>Déploiement de GRR depuis GitHub (JeromeDevome/GRR) dans le répertoire <code>/reservations</code></li>
+            <li>Création de la base de données MySQL <code>grr</code> via phpMyAdmin</li>
+            <li>Configuration Apache pour accès réseau : modification de <code>httpd.conf</code> et des VirtualHosts</li>
             <li>Ouverture du pare-feu Windows sur le port 80 (TCP)</li>
-            <li>Configuration du fichier hosts pour nommage interne : <code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.85em;">infra56/reservations</code></li>
+            <li>Configuration du fichier hosts pour nommage interne : <code>infra56/reservations</code></li>
             <li>Rédaction d'un guide d'installation complet pour la reprise et maintenance</li>
           </ul>
 
           <h3>Dépannage résolu</h3>
           <ul>
             <li>Port 80 occupé (Skype, IIS) → identification et libération du port</li>
-            <li>Erreur 403 Apache → correction des droits d'accès (<code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.85em;">Require all granted</code>)</li>
+            <li>Erreur 403 Apache → correction des droits d'accès (<code>Require all granted</code>)</li>
             <li>Accès réseau impossible → configuration VirtualHost + règles pare-feu</li>
           </ul>
 
           <h3>Résultat</h3>
           <p>
-            Le GRR est accessible depuis tous les postes du réseau interne via <code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.85em;">http://infra56/reservations</code>. Un guide d'installation complet a été remis pour faciliter la reprise du service.
+            Le GRR est accessible depuis tous les postes du réseau interne via <code>http://infra56/reservations</code>. Un guide d'installation complet a été remis pour faciliter la reprise du service.
           </p>
 
         </div>

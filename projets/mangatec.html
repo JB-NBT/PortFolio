@@ -64,7 +64,7 @@
 
           <h3>Contexte &amp; objectifs</h3>
           <p>
-            Mangatec est une application web de gestion d'une médiathèque spécialisée dans les mangas (comics japonais). Ce projet constitue le <strong style="color:var(--text)">Dossier E6</strong> du BTS SIO SLAM, réalisé à l'AFTEC de Vannes.
+            Mangatec est une application web de gestion d'une médiathèque spécialisée dans les mangas (comics japonais). Ce projet constitue le <strong>Dossier E6</strong> du BTS SIO SLAM, réalisé à l'AFTEC de Vannes.
           </p>
           <p>
             L'objectif était de concevoir et déployer une application complète permettant aux membres d'une médiathèque de consulter et gérer le catalogue de mangas, avec des droits différenciés selon le rôle de l'utilisateur.
@@ -72,27 +72,27 @@
 
           <h3>Fonctionnalités réalisées</h3>
           <ul>
-            <li><strong style="color:var(--text)">UC1 — Authentification</strong> : inscription, connexion, déconnexion sécurisées (Laravel Breeze / Auth)</li>
-            <li><strong style="color:var(--text)">UC2 — Consultation du catalogue</strong> : liste des mangas, recherche par titre / auteur / genre, affichage détaillé</li>
-            <li><strong style="color:var(--text)">UC3 — Gestion du catalogue</strong> (modérateur / admin) : ajout, modification, suppression de mangas et de séries</li>
-            <li><strong style="color:var(--text)">UC4 — Administration</strong> (admin uniquement) : gestion des utilisateurs, attribution des rôles, supervision</li>
+            <li><strong>UC1 — Authentification</strong> : inscription, connexion, déconnexion sécurisées (Laravel Breeze / Auth)</li>
+            <li><strong>UC2 — Consultation du catalogue</strong> : liste des mangas, recherche par titre / auteur / genre, affichage détaillé</li>
+            <li><strong>UC3 — Gestion du catalogue</strong> (modérateur / admin) : ajout, modification, suppression de mangas et de séries</li>
+            <li><strong>UC4 — Administration</strong> (admin uniquement) : gestion des utilisateurs, attribution des rôles, supervision</li>
           </ul>
 
           <h3>Gestion des rôles (Spatie Laravel Permission)</h3>
           <p>Trois niveaux d'accès distincts, gérés via le package Spatie Laravel Permission :</p>
           <ul>
-            <li><strong style="color:var(--text)">User</strong> — consultation uniquement : lecture du catalogue, recherche</li>
-            <li><strong style="color:var(--text)">Modérateur</strong> — gestion éditoriale : ajout et modification des fiches mangas, gestion du catalogue</li>
-            <li><strong style="color:var(--text)">Administrateur</strong> — contrôle total : gestion des utilisateurs, attribution des rôles, administration complète</li>
+            <li><strong>User</strong> — consultation uniquement : lecture du catalogue, recherche</li>
+            <li><strong>Modérateur</strong> — gestion éditoriale : ajout et modification des fiches mangas, gestion du catalogue</li>
+            <li><strong>Administrateur</strong> — contrôle total : gestion des utilisateurs, attribution des rôles, administration complète</li>
           </ul>
 
           <h3>Architecture technique</h3>
           <ul>
-            <li><strong style="color:var(--text)">Framework</strong> : Laravel 11 — architecture MVC, routes nommées, middlewares</li>
-            <li><strong style="color:var(--text)">Backend</strong> : PHP 8.2 — Eloquent ORM, relations Many-to-Many (mangas ↔ genres), migrations, seeders</li>
-            <li><strong style="color:var(--text)">Base de données</strong> : MySQL 8.0 — schéma relationnel complet</li>
-            <li><strong style="color:var(--text)">Templates</strong> : Blade — composants réutilisables, layouts partagés</li>
-            <li><strong style="color:var(--text)">Permissions</strong> : Spatie Laravel Permission — rôles et permissions en base de données</li>
+            <li><strong>Framework</strong> : Laravel 11 — architecture MVC, routes nommées, middlewares</li>
+            <li><strong>Backend</strong> : PHP 8.2 — Eloquent ORM, relations Many-to-Many (mangas ↔ genres), migrations, seeders</li>
+            <li><strong>Base de données</strong> : MySQL 8.0 — schéma relationnel complet</li>
+            <li><strong>Templates</strong> : Blade — composants réutilisables, layouts partagés</li>
+            <li><strong>Permissions</strong> : Spatie Laravel Permission — rôles et permissions en base de données</li>
           </ul>
 
           <h3>Infrastructure virtualisée</h3>
@@ -100,8 +100,8 @@
             Le projet a été déployé en environnement virtualisé, reproduisant une architecture client/serveur réelle :
           </p>
           <ul>
-            <li><strong style="color:var(--text)">VM Serveur</strong> (Ubuntu Server) : Apache2, PHP 8.2, MySQL 8.0, application Laravel</li>
-            <li><strong style="color:var(--text)">VM Client</strong> (Ubuntu Desktop) : accès à l'application via navigateur</li>
+            <li><strong>VM Serveur</strong> (Ubuntu Server) : Apache2, PHP 8.2, MySQL 8.0, application Laravel</li>
+            <li><strong>VM Client</strong> (Ubuntu Desktop) : accès à l'application via navigateur</li>
             <li>Connexion réseau local entre les VMs — simulation d'un environnement de production</li>
           </ul>
 
