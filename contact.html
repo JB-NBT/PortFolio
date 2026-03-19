@@ -141,9 +141,9 @@
     <section>
       <div class="container">
         <div class="section-header reveal" style="margin-bottom:52px;">
-          <div class="section-label">Prenons contact</div>
-          <h2>Me contacter</h2>
-          <p>Une question, une opportunité d'alternance ? Écrivez-moi directement.</p>
+          <div class="section-label" data-i18n="contact.label">Prenons contact</div>
+          <h2 data-i18n="contact.title">Me contacter</h2>
+          <p data-i18n="contact.subtitle">Une question, une opportunité d'alternance ? Écrivez-moi directement.</p>
         </div>
 
         <div class="contact-layout">
@@ -160,33 +160,33 @@
             <div class="contact-info-item">
               <div class="contact-info-icon">📱</div>
               <div class="contact-info-text">
-                <div class="label">Téléphone</div>
+                <div class="label" data-i18n="contact.phone">Téléphone</div>
                 <div class="value"><a href="tel:+33673081881">06 73 08 18 81</a></div>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">📍</div>
               <div class="contact-info-text">
-                <div class="label">Localisation</div>
+                <div class="label" data-i18n="contact.location">Localisation</div>
                 <div class="value">Vannes, Morbihan (56)</div>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">🚗</div>
               <div class="contact-info-text">
-                <div class="label">Mobilité</div>
-                <div class="value">Permis B — véhiculé</div>
+                <div class="label" data-i18n="contact.mobility">Mobilité</div>
+                <div class="value" data-i18n="contact.license">Permis B — véhiculé</div>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">💼</div>
               <div class="contact-info-text">
-                <div class="label">Disponibilité</div>
-                <div class="value">En recherche d'alternance — contrat éligible aide de 5 000 €</div>
+                <div class="label" data-i18n="contact.availability">Disponibilité</div>
+                <div class="value" data-i18n="contact.available">En recherche d'alternance — contrat éligible aide de 5 000 €</div>
               </div>
             </div>
 
-            <a href="CV_JEAN BAPTISTE_NOBLET.pdf" download="CV_Jean-Baptiste_Noblet.pdf" class="btn btn-outline" style="justify-content:center;">
+            <a href="CV_JEAN BAPTISTE_NOBLET.pdf" download="CV_Jean-Baptiste_Noblet.pdf" class="btn btn-outline" style="justify-content:center;" data-i18n="contact.dl.cv">
               ⬇ Télécharger mon CV
             </a>
           </aside>
@@ -196,36 +196,36 @@
             <form class="contact-form" id="contactForm" novalidate>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Votre nom</label>
-                  <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+                  <label for="name" data-i18n="form.name">Votre nom</label>
+                  <input type="text" id="name" name="name" placeholder="Jean Dupont" data-i18n-placeholder="form.name.ph" required />
                 </div>
                 <div class="form-group">
-                  <label for="company">Entreprise (optionnel)</label>
-                  <input type="text" id="company" name="company" placeholder="Nom de l'entreprise" />
+                  <label for="company" data-i18n="form.company">Entreprise (optionnel)</label>
+                  <input type="text" id="company" name="company" placeholder="Nom de l'entreprise" data-i18n-placeholder="form.company.ph" />
                 </div>
               </div>
               <div class="form-group">
-                <label for="email">Votre adresse email</label>
+                <label for="email" data-i18n="form.email.label">Votre adresse email</label>
                 <input type="email" id="email" name="email" placeholder="vous@example.com" required />
               </div>
               <div class="form-group">
-                <label for="subject">Objet</label>
-                <input type="text" id="subject" name="subject" placeholder="Proposition d'alternance, question..." required />
+                <label for="subject" data-i18n="form.subject">Objet</label>
+                <input type="text" id="subject" name="subject" placeholder="Proposition d'alternance, question..." data-i18n-placeholder="form.subject.ph" required />
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                <label for="message" data-i18n="form.message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message..." data-i18n-placeholder="form.message.ph" required></textarea>
               </div>
 
-              <p class="form-notice">
+              <p class="form-notice" data-i18n="form.notice">
                 Ce formulaire ouvre votre client mail (Outlook, Thunderbird, Gmail...) avec les informations pré-remplies.
               </p>
 
-              <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+              <button type="submit" class="btn btn-primary" style="align-self:flex-start;" data-i18n="form.submit">
                 Envoyer le message →
               </button>
 
-              <div class="form-success" id="formSuccess">
+              <div class="form-success" id="formSuccess" data-i18n="form.success">
                 ✓ Votre client mail a été ouvert avec le message pré-rempli.
               </div>
             </form>
