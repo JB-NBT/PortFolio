@@ -26,10 +26,12 @@
   }
 
   /* Active link */
-  const cur = window.location.pathname.split('/').pop() || 'index.html';
+  const cur = window.location.pathname;
   document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {
-    const href = (link.getAttribute('href') || '').split('/').pop();
-    if (href === cur || (cur === '' && href === 'index.html')) link.classList.add('active');
+    const resolved = new URL(link.href).pathname;
+    if (resolved === cur || resolved.replace(/index\.html$/, '') === cur.replace(/index\.html$/, '')) {
+      link.classList.add('active');
+    }
   });
 })();
 
