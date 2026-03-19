@@ -26,12 +26,10 @@
   }
 
   /* Active link */
-  const cur = window.location.pathname;
+  function normPath(p) { return p.replace(/\/index\.html$/, '/').replace(/([^\/])$/, '$1/'); }
+  const cur = normPath(window.location.pathname);
   document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {
-    const resolved = new URL(link.href).pathname;
-    if (resolved === cur || resolved.replace(/index\.html$/, '') === cur.replace(/index\.html$/, '')) {
-      link.classList.add('active');
-    }
+    if (normPath(new URL(link.href).pathname) === cur) link.classList.add('active');
   });
 })();
 
