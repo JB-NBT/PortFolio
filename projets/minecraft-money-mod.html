@@ -40,7 +40,7 @@
     <div class="container">
 
       <div class="proj-detail-top reveal">
-        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <a href="index.html" class="back-link" data-i18n="proj.back">← Retour aux projets</a>
         <div style="margin-bottom:14px;">
           <span class="tag tag-gray" style="display:inline-block; margin-bottom:10px;">Projet personnel · Minecraft Forge</span>
           <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;" data-i18n="proj.inprogress">En cours</span>
@@ -60,52 +60,52 @@
       <div class="detail-grid reveal">
         <div class="detail-content">
 
-          <h3>Présentation</h3>
-          <p>
+          <h3 data-i18n="proj.money.h3.overview">Présentation</h3>
+          <p data-i18n="proj.money.overview.p1">
             Money Mod ajoute à Minecraft un vrai système économique qui n'existe pas nativement dans le jeu. L'idée de départ : permettre aux joueurs d'un serveur de commercer de manière structurée, avec une monnaie physique (pièces craftables) et des marchands PNJ.
           </p>
 
-          <h3>Fonctionnalités</h3>
+          <h3 data-i18n="proj.money.h3.features">Fonctionnalités</h3>
           <ul>
-            <li>Ajout de pièces de monnaie (bronze, argent, or) — items craftables</li>
-            <li>Système de portefeuille par joueur (stockage de monnaie)</li>
-            <li>Marchands PNJ avec catalogue d'achats/ventes configurable</li>
-            <li>Transactions joueur-à-joueur via commandes ou interface</li>
-            <li>Historique des transactions (log)</li>
-            <li>Équilibrage économique configurable (taux de change, prix)</li>
+            <li data-i18n="proj.money.feat.1">Ajout de pièces de monnaie (bronze, argent, or) — items craftables</li>
+            <li data-i18n="proj.money.feat.2">Système de portefeuille par joueur (stockage de monnaie)</li>
+            <li data-i18n="proj.money.feat.3">Marchands PNJ avec catalogue d'achats/ventes configurable</li>
+            <li data-i18n="proj.money.feat.4">Transactions joueur-à-joueur via commandes ou interface</li>
+            <li data-i18n="proj.money.feat.5">Historique des transactions (log)</li>
+            <li data-i18n="proj.money.feat.6">Équilibrage économique configurable (taux de change, prix)</li>
           </ul>
 
-          <h3>Architecture technique</h3>
+          <h3 data-i18n="proj.money.h3.tech">Architecture technique</h3>
           <ul>
-            <li>Items personnalisés (pièces) avec logique de craft</li>
-            <li>Entités marchands avec inventaire et IA de base</li>
-            <li>Système de sauvegarde de données joueur (NBT / JSON)</li>
-            <li>Commandes custom enregistrées via Forge</li>
-            <li>Gestion des events Forge (interaction joueur, craft...)</li>
+            <li data-i18n="proj.money.tech.1">Items personnalisés (pièces) avec logique de craft</li>
+            <li data-i18n="proj.money.tech.2">Entités marchands avec inventaire et IA de base</li>
+            <li data-i18n="proj.money.tech.3">Système de sauvegarde de données joueur (NBT / JSON)</li>
+            <li data-i18n="proj.money.tech.4">Commandes custom enregistrées via Forge</li>
+            <li data-i18n="proj.money.tech.5">Gestion des events Forge (interaction joueur, craft...)</li>
           </ul>
 
-          <h3>Ce que ça m'apporte</h3>
+          <h3 data-i18n="proj.money.h3.learning">Ce que ça m'apporte</h3>
           <ul>
-            <li>Pratique de la gestion de données persistantes en Java</li>
-            <li>Conception d'un système complexe avec de nombreuses interactions</li>
-            <li>Expérience avec les registres Forge et le cycle de vie du mod</li>
-            <li>Pensée systémique : équilibrage et cohérence économique</li>
+            <li data-i18n="proj.money.learn.1">Pratique de la gestion de données persistantes en Java</li>
+            <li data-i18n="proj.money.learn.2">Conception d'un système complexe avec de nombreuses interactions</li>
+            <li data-i18n="proj.money.learn.3">Expérience avec les registres Forge et le cycle de vie du mod</li>
+            <li data-i18n="proj.money.learn.4">Pensée systémique : équilibrage et cohérence économique</li>
           </ul>
 
         </div>
 
         <aside class="detail-sidebar">
           <div class="card meta-box">
-            <h4>Infos projet</h4>
+            <h4 data-i18n="proj.sidebar.infos">Infos projet</h4>
             <div class="meta-rows">
-              <div class="meta-row"><span>🎮</span><span>Projet personnel</span></div>
-              <div class="meta-row"><span>👤</span><span>Solo</span></div>
-              <div class="meta-row"><span>🎯</span><span>Minecraft Java Edition</span></div>
-              <div class="meta-row"><span>⚙️</span><span>Minecraft Forge API</span></div>
+              <div class="meta-row"><span>🎮</span><span data-i18n="proj.money.meta.type">Projet personnel</span></div>
+              <div class="meta-row"><span>👤</span><span data-i18n="proj.money.meta.team">Solo</span></div>
+              <div class="meta-row"><span>🎯</span><span data-i18n="proj.money.meta.target">Minecraft Java Edition</span></div>
+              <div class="meta-row"><span>⚙️</span><span data-i18n="proj.money.meta.api">Minecraft Forge API</span></div>
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Stack</h4>
+            <h4 data-i18n="proj.sidebar.stack">Stack</h4>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="tag tag-blue">Java</span>
               <span class="tag tag-gray">NeoForge</span>
@@ -118,10 +118,10 @@
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Autre mod</h4>
+            <h4 data-i18n="proj.sidebar.other.mod">Autre mod</h4>
             <a href="minecraft-isle-of-berk.html" class="btn btn-ghost" style="width:100%; justify-content:center; font-size:0.84rem;">Isle of Berk →</a>
           </div>
-          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;" data-i18n="proj.sidebar.all">← Tous les projets</a>
         </aside>
       </div>
 

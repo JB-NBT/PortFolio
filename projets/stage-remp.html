@@ -40,7 +40,7 @@
     <div class="container">
 
       <div class="proj-detail-top reveal">
-        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <a href="index.html" class="back-link" data-i18n="proj.back">← Retour aux projets</a>
         <div style="margin-bottom:14px;">
           <span class="tag tag-lime" style="display:inline-block; margin-bottom:8px;">Stage — DSDEN du Morbihan</span>
           <span class="tag tag-orange" style="display:inline-block; margin-bottom:8px; margin-left:6px;">Priorité haute</span>
@@ -59,43 +59,43 @@
       <div style="background:rgba(251,146,60,0.08); border:1px solid rgba(251,146,60,0.25); border-radius:var(--r); padding:16px 20px; margin-bottom:32px; display:flex; gap:12px; align-items:flex-start;" class="reveal">
         <span style="font-size:1.2rem; flex-shrink:0;">⚠️</span>
         <div>
-          <strong style="color:var(--orange); font-size:0.92rem;">Projet inachevé</strong>
-          <p style="margin-top:4px; font-size:0.88rem;">Ce projet n'a pas pu être finalisé en raison de contraintes budgétaires et matérielles du service commanditaire. La conception et l'architecture ont été livrées, mais le déploiement complet n'a pas pu être effectué dans les délais du stage.</p>
+          <strong style="color:var(--orange); font-size:0.92rem;" data-i18n="proj.remp.unfinished.title">Projet inachevé</strong>
+          <p style="margin-top:4px; font-size:0.88rem;" data-i18n="proj.remp.unfinished.p1">Ce projet n'a pas pu être finalisé en raison de contraintes budgétaires et matérielles du service commanditaire. La conception et l'architecture ont été livrées, mais le déploiement complet n'a pas pu être effectué dans les délais du stage.</p>
         </div>
       </div>
 
       <div class="detail-grid reveal">
         <div class="detail-content">
 
-          <h3>Contexte &amp; problème</h3>
-          <p>
+          <h3 data-i18n="proj.h3.context.pb">Contexte &amp; problème</h3>
+          <p data-i18n="proj.remp.context.p1">
             Les circonscriptions géraient les remplacements d'enseignants via des échanges de mails quotidiens et des fichiers Excel. Ce système était chronophage, sujet aux erreurs et difficile à suivre pour la direction générale.
           </p>
-          <p>
+          <p data-i18n="proj.remp.context.p2">
             Projet réalisé en binôme (deux stagiaires BTS SIO) sous la direction du Responsable Adjoint DSI. La deadline était le départ du commanditaire (juillet 2025).
           </p>
 
-          <h3>Ce qui a été réalisé</h3>
+          <h3 data-i18n="proj.remp.h3.done">Ce qui a été réalisé</h3>
           <ul>
-            <li>Analyse des besoins avec le commanditaire (Responsable DSI)</li>
-            <li>Conception de l'architecture de données dans Grist</li>
-            <li>Création des tables de référence (circonscriptions, BD, départements)</li>
-            <li>Formulaires de saisie par circonscription</li>
-            <li>Structure de la table synthèse pour la direction générale</li>
-            <li>Prototype de gestion des droits utilisateurs</li>
-            <li>Documentation technique partielle et guide utilisateur</li>
+            <li data-i18n="proj.remp.done.1">Analyse des besoins avec le commanditaire (Responsable DSI)</li>
+            <li data-i18n="proj.remp.done.2">Conception de l'architecture de données dans Grist</li>
+            <li data-i18n="proj.remp.done.3">Création des tables de référence (circonscriptions, BD, départements)</li>
+            <li data-i18n="proj.remp.done.4">Formulaires de saisie par circonscription</li>
+            <li data-i18n="proj.remp.done.5">Structure de la table synthèse pour la direction générale</li>
+            <li data-i18n="proj.remp.done.6">Prototype de gestion des droits utilisateurs</li>
+            <li data-i18n="proj.remp.done.7">Documentation technique partielle et guide utilisateur</li>
           </ul>
 
-          <h3>Ce qui n'a pas pu être livré</h3>
+          <h3 data-i18n="proj.remp.h3.notdone">Ce qui n'a pas pu être livré</h3>
           <ul>
-            <li>Déploiement complet sur l'infrastructure Toutatice de l'EN</li>
-            <li>Intégration avec les outils existants (manque de ressources matérielles)</li>
-            <li>Tests utilisateurs avec le personnel des circonscriptions</li>
-            <li>Recette finale par le commanditaire</li>
+            <li data-i18n="proj.remp.notdone.1">Déploiement complet sur l'infrastructure Toutatice de l'EN</li>
+            <li data-i18n="proj.remp.notdone.2">Intégration avec les outils existants (manque de ressources matérielles)</li>
+            <li data-i18n="proj.remp.notdone.3">Tests utilisateurs avec le personnel des circonscriptions</li>
+            <li data-i18n="proj.remp.notdone.4">Recette finale par le commanditaire</li>
           </ul>
 
-          <h3>Ce que j'ai appris</h3>
-          <p>
+          <h3 data-i18n="proj.h3.learning">Ce que j'ai appris</h3>
+          <p data-i18n="proj.remp.learning.p1">
             Au-delà des aspects techniques, ce projet m'a confronté à la réalité des projets en entreprise : les contraintes budgétaires et organisationnelles peuvent bloquer un projet techniquement viable. Gestion des priorités, communication avec le commanditaire, adaptation face aux imprévus.
           </p>
 
@@ -103,18 +103,18 @@
 
         <aside class="detail-sidebar">
           <div class="card meta-box">
-            <h4>Infos projet</h4>
+            <h4 data-i18n="proj.sidebar.infos">Infos projet</h4>
             <div class="meta-rows">
-              <div class="meta-row"><span>📅</span><span>Juillet 2025 (~13 jours prévus)</span></div>
-              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan — DSI</span></div>
-              <div class="meta-row"><span>👥</span><span>2 stagiaires BTS SIO</span></div>
-              <div class="meta-row"><span>⚠️</span><span>Priorité haute — inachevé</span></div>
-              <div class="meta-row"><span>❌</span><span>Arrêt : contraintes budgétaires et matérielles</span></div>
-              <div class="meta-row"><span>🎓</span><span>BTS SIO SLAM — AFTEC</span></div>
+              <div class="meta-row"><span>📅</span><span data-i18n="proj.remp.meta.date">Juillet 2025 (~13 jours prévus)</span></div>
+              <div class="meta-row"><span>🏢</span><span data-i18n="proj.remp.meta.org">DSDEN du Morbihan — DSI</span></div>
+              <div class="meta-row"><span>👥</span><span data-i18n="proj.remp.meta.team">2 stagiaires BTS SIO</span></div>
+              <div class="meta-row"><span>⚠️</span><span data-i18n="proj.remp.meta.priority">Priorité haute — inachevé</span></div>
+              <div class="meta-row"><span>❌</span><span data-i18n="proj.remp.meta.stop">Arrêt : contraintes budgétaires et matérielles</span></div>
+              <div class="meta-row"><span>🎓</span><span data-i18n="proj.remp.meta.dossier">BTS SIO SLAM — AFTEC</span></div>
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Stack prévue</h4>
+            <h4 data-i18n="proj.remp.sidebar.stack">Stack prévue</h4>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="tag tag-gray">Grist</span>
               <span class="tag tag-green">Python</span>
@@ -122,14 +122,14 @@
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Autres projets de stage</h4>
+            <h4 data-i18n="proj.sidebar.other.stage">Autres projets de stage</h4>
             <div style="display:flex; flex-direction:column; gap:8px;">
               <a href="stage-drasi.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Site DRASI →</a>
               <a href="stage-grr.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">GRR →</a>
               <a href="stage-nommage.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Nommage des postes →</a>
             </div>
           </div>
-          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;" data-i18n="proj.sidebar.all">← Tous les projets</a>
         </aside>
       </div>
 

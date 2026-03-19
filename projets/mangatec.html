@@ -40,10 +40,10 @@
     <div class="container">
 
       <div class="proj-detail-top reveal">
-        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <a href="index.html" class="back-link" data-i18n="proj.back">← Retour aux projets</a>
         <div style="margin-bottom:14px;">
           <span class="tag tag-lime" style="display:inline-block; margin-bottom:10px;">BTS SIO SLAM — AFTEC · Dossier E6</span>
-          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;">En cours</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;" data-i18n="proj.inprogress">En cours</span>
         </div>
         <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Mangatec — Médiathèque de mangas</h1>
         <p style="max-width:640px; font-size:1rem;">
@@ -62,59 +62,59 @@
       <div class="detail-grid reveal">
         <div class="detail-content">
 
-          <h3>Contexte &amp; objectifs</h3>
-          <p>
+          <h3 data-i18n="proj.mangatec.h3.context">Contexte &amp; objectifs</h3>
+          <p data-i18n="proj.mangatec.context.p1">
             Mangatec est une application web de gestion d'une médiathèque spécialisée dans les mangas (comics japonais). Ce projet constitue le <strong>Dossier E6</strong> du BTS SIO SLAM, réalisé à l'AFTEC de Vannes.
           </p>
-          <p>
+          <p data-i18n="proj.mangatec.context.p2">
             L'objectif était de concevoir et déployer une application complète permettant aux membres d'une médiathèque de consulter et gérer le catalogue de mangas, avec des droits différenciés selon le rôle de l'utilisateur.
           </p>
 
-          <h3>Fonctionnalités réalisées</h3>
+          <h3 data-i18n="proj.mangatec.h3.features">Fonctionnalités réalisées</h3>
           <ul>
-            <li><strong>UC1 — Authentification</strong> : inscription, connexion, déconnexion sécurisées (Laravel Breeze / Auth)</li>
-            <li><strong>UC2 — Consultation du catalogue</strong> : liste des mangas, recherche par titre / auteur / genre, affichage détaillé</li>
-            <li><strong>UC3 — Gestion du catalogue</strong> (modérateur / admin) : ajout, modification, suppression de mangas et de séries</li>
-            <li><strong>UC4 — Administration</strong> (admin uniquement) : gestion des utilisateurs, attribution des rôles, supervision</li>
+            <li data-i18n="proj.mangatec.feat.1"><strong>UC1 — Authentification</strong> : inscription, connexion, déconnexion sécurisées (Laravel Breeze / Auth)</li>
+            <li data-i18n="proj.mangatec.feat.2"><strong>UC2 — Consultation du catalogue</strong> : liste des mangas, recherche par titre / auteur / genre, affichage détaillé</li>
+            <li data-i18n="proj.mangatec.feat.3"><strong>UC3 — Gestion du catalogue</strong> (modérateur / admin) : ajout, modification, suppression de mangas et de séries</li>
+            <li data-i18n="proj.mangatec.feat.4"><strong>UC4 — Administration</strong> (admin uniquement) : gestion des utilisateurs, attribution des rôles, supervision</li>
           </ul>
 
-          <h3>Gestion des rôles (Spatie Laravel Permission)</h3>
-          <p>Trois niveaux d'accès distincts, gérés via le package Spatie Laravel Permission :</p>
+          <h3 data-i18n="proj.mangatec.h3.roles">Gestion des rôles (Spatie Laravel Permission)</h3>
+          <p data-i18n="proj.mangatec.roles.p1">Trois niveaux d'accès distincts, gérés via le package Spatie Laravel Permission :</p>
           <ul>
-            <li><strong>User</strong> — consultation uniquement : lecture du catalogue, recherche</li>
-            <li><strong>Modérateur</strong> — gestion éditoriale : ajout et modification des fiches mangas, gestion du catalogue</li>
-            <li><strong>Administrateur</strong> — contrôle total : gestion des utilisateurs, attribution des rôles, administration complète</li>
+            <li data-i18n="proj.mangatec.role.1"><strong>User</strong> — consultation uniquement : lecture du catalogue, recherche</li>
+            <li data-i18n="proj.mangatec.role.2"><strong>Modérateur</strong> — gestion éditoriale : ajout et modification des fiches mangas, gestion du catalogue</li>
+            <li data-i18n="proj.mangatec.role.3"><strong>Administrateur</strong> — contrôle total : gestion des utilisateurs, attribution des rôles, administration complète</li>
           </ul>
 
-          <h3>Architecture technique</h3>
+          <h3 data-i18n="proj.mangatec.h3.tech">Architecture technique</h3>
           <ul>
-            <li><strong>Framework</strong> : Laravel 11 — architecture MVC, routes nommées, middlewares</li>
-            <li><strong>Backend</strong> : PHP 8.2 — Eloquent ORM, relations Many-to-Many (mangas ↔ genres), migrations, seeders</li>
-            <li><strong>Base de données</strong> : MySQL 8.0 — schéma relationnel complet</li>
-            <li><strong>Templates</strong> : Blade — composants réutilisables, layouts partagés</li>
-            <li><strong>Permissions</strong> : Spatie Laravel Permission — rôles et permissions en base de données</li>
+            <li data-i18n="proj.mangatec.tech.1"><strong>Framework</strong> : Laravel 11 — architecture MVC, routes nommées, middlewares</li>
+            <li data-i18n="proj.mangatec.tech.2"><strong>Backend</strong> : PHP 8.2 — Eloquent ORM, relations Many-to-Many (mangas ↔ genres), migrations, seeders</li>
+            <li data-i18n="proj.mangatec.tech.3"><strong>Base de données</strong> : MySQL 8.0 — schéma relationnel complet</li>
+            <li data-i18n="proj.mangatec.tech.4"><strong>Templates</strong> : Blade — composants réutilisables, layouts partagés</li>
+            <li data-i18n="proj.mangatec.tech.5"><strong>Permissions</strong> : Spatie Laravel Permission — rôles et permissions en base de données</li>
           </ul>
 
-          <h3>Infrastructure virtualisée</h3>
-          <p>
+          <h3 data-i18n="proj.mangatec.h3.infra">Infrastructure virtualisée</h3>
+          <p data-i18n="proj.mangatec.infra.p1">
             Le projet a été déployé en environnement virtualisé, reproduisant une architecture client/serveur réelle :
           </p>
           <ul>
-            <li><strong>VM Serveur</strong> (Ubuntu Server) : Apache2, PHP 8.2, MySQL 8.0, application Laravel</li>
-            <li><strong>VM Client</strong> (Ubuntu Desktop) : accès à l'application via navigateur</li>
-            <li>Connexion réseau local entre les VMs — simulation d'un environnement de production</li>
+            <li data-i18n="proj.mangatec.infra.1"><strong>VM Serveur</strong> (Ubuntu Server) : Apache2, PHP 8.2, MySQL 8.0, application Laravel</li>
+            <li data-i18n="proj.mangatec.infra.2"><strong>VM Client</strong> (Ubuntu Desktop) : accès à l'application via navigateur</li>
+            <li data-i18n="proj.mangatec.infra.3">Connexion réseau local entre les VMs — simulation d'un environnement de production</li>
           </ul>
 
-          <h3>Ce que j'ai appris</h3>
+          <h3 data-i18n="proj.mangatec.h3.learning">Ce que j'ai appris</h3>
           <ul>
-            <li>Prise en main de Laravel 11 : routing, controllers, models, Eloquent</li>
-            <li>Gestion des rôles et permissions avec Spatie — séparation nette des droits</li>
-            <li>Conception de schémas relationnels et migrations</li>
-            <li>Déploiement sur Apache Linux en environnement virtualisé</li>
-            <li>Rédaction de documentation technique (Dossier E6 BTS SIO)</li>
+            <li data-i18n="proj.mangatec.learn.1">Prise en main de Laravel 11 : routing, controllers, models, Eloquent</li>
+            <li data-i18n="proj.mangatec.learn.2">Gestion des rôles et permissions avec Spatie — séparation nette des droits</li>
+            <li data-i18n="proj.mangatec.learn.3">Conception de schémas relationnels et migrations</li>
+            <li data-i18n="proj.mangatec.learn.4">Déploiement sur Apache Linux en environnement virtualisé</li>
+            <li data-i18n="proj.mangatec.learn.5">Rédaction de documentation technique (Dossier E6 BTS SIO)</li>
           </ul>
 
-          <h3>Aperçus du projet</h3>
+          <h3 data-i18n="proj.h3.screenshots">Aperçus du projet</h3>
           <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
             <div>
               <img src="../assets/img/stage/Mangatec1.png" alt="Page d'accueil Mangatec — évolution V1 vers V2" loading="lazy" />
@@ -134,17 +134,17 @@
 
         <aside class="detail-sidebar">
           <div class="card meta-box">
-            <h4>Infos projet</h4>
+            <h4 data-i18n="proj.sidebar.infos">Infos projet</h4>
             <div class="meta-rows">
-              <div class="meta-row"><span>📅</span><span>2024 – 2025</span></div>
-              <div class="meta-row"><span>🏫</span><span>AFTEC Vannes</span></div>
-              <div class="meta-row"><span>🎓</span><span>Dossier E6 — BTS SIO SLAM</span></div>
-              <div class="meta-row"><span>👤</span><span>Projet individuel</span></div>
-              <div class="meta-row"><span>🖥️</span><span>2 VMs Ubuntu (client + serveur)</span></div>
+              <div class="meta-row"><span>📅</span><span data-i18n="proj.mangatec.meta.date">2024 – 2025</span></div>
+              <div class="meta-row"><span>🏫</span><span data-i18n="proj.mangatec.meta.school">AFTEC Vannes</span></div>
+              <div class="meta-row"><span>🎓</span><span data-i18n="proj.mangatec.meta.dossier">Dossier E6 — BTS SIO SLAM</span></div>
+              <div class="meta-row"><span>👤</span><span data-i18n="proj.mangatec.meta.team">Projet individuel</span></div>
+              <div class="meta-row"><span>🖥️</span><span data-i18n="proj.mangatec.meta.infra">2 VMs Ubuntu (client + serveur)</span></div>
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Stack</h4>
+            <h4 data-i18n="proj.sidebar.stack">Stack</h4>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="tag tag-blue">Laravel 11</span>
               <span class="tag tag-blue">PHP 8.2</span>
@@ -156,7 +156,7 @@
               <span class="tag tag-gray">Git / GitHub</span>
             </div>
           </div>
-          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;" data-i18n="proj.sidebar.all">← Tous les projets</a>
         </aside>
       </div>
 

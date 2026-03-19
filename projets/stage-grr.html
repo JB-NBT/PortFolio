@@ -40,7 +40,7 @@
     <div class="container">
 
       <div class="proj-detail-top reveal">
-        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <a href="index.html" class="back-link" data-i18n="proj.back">← Retour aux projets</a>
         <div style="margin-bottom:14px;"><span class="tag tag-lime" style="display:inline-block; margin-bottom:10px;">Stage — DSDEN du Morbihan</span></div>
         <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">GRR — Gestionnaire de Réservation de Ressources</h1>
         <p style="max-width:640px; font-size:1rem;">Déploiement et configuration d'un système GRR open-source sur WAMP pour la gestion des réservations de ressources informatiques sur le réseau interne.</p>
@@ -55,32 +55,32 @@
       <div class="detail-grid reveal">
         <div class="detail-content">
 
-          <h3>Contexte</h3>
-          <p>
+          <h3 data-i18n="proj.h3.context">Contexte</h3>
+          <p data-i18n="proj.grr.context.p1">
             La DSDEN du Morbihan avait besoin d'un système centralisé pour que les équipes puissent réserver du matériel informatique (salles, équipements) sans passer par des échanges informels. J'ai déployé et configuré le logiciel open-source <strong>GRR (Gestion et Réservation de Ressources)</strong>.
           </p>
 
-          <h3>Ce que j'ai fait</h3>
+          <h3 data-i18n="proj.grr.h3.done">Ce que j'ai fait</h3>
           <ul>
-            <li>Installation et configuration de <strong>WAMP Server</strong> sur Windows 11 (serveur local)</li>
-            <li>Installation des prérequis Visual C++ Redistributable</li>
-            <li>Déploiement de GRR depuis GitHub (JeromeDevome/GRR) dans le répertoire <code>/reservations</code></li>
-            <li>Création de la base de données MySQL <code>grr</code> via phpMyAdmin</li>
-            <li>Configuration Apache pour accès réseau : modification de <code>httpd.conf</code> et des VirtualHosts</li>
-            <li>Ouverture du pare-feu Windows sur le port 80 (TCP)</li>
-            <li>Configuration du fichier hosts pour nommage interne : <code>infra56/reservations</code></li>
-            <li>Rédaction d'un guide d'installation complet pour la reprise et maintenance</li>
+            <li data-i18n="proj.grr.done.1">Installation et configuration de <strong>WAMP Server</strong> sur Windows 11 (serveur local)</li>
+            <li data-i18n="proj.grr.done.2">Installation des prérequis Visual C++ Redistributable</li>
+            <li data-i18n="proj.grr.done.3">Déploiement de GRR depuis GitHub (JeromeDevome/GRR) dans le répertoire <code>/reservations</code></li>
+            <li data-i18n="proj.grr.done.4">Création de la base de données MySQL <code>grr</code> via phpMyAdmin</li>
+            <li data-i18n="proj.grr.done.5">Configuration Apache pour accès réseau : modification de <code>httpd.conf</code> et des VirtualHosts</li>
+            <li data-i18n="proj.grr.done.6">Ouverture du pare-feu Windows sur le port 80 (TCP)</li>
+            <li data-i18n="proj.grr.done.7">Configuration du fichier hosts pour nommage interne : <code>infra56/reservations</code></li>
+            <li data-i18n="proj.grr.done.8">Rédaction d'un guide d'installation complet pour la reprise et maintenance</li>
           </ul>
 
-          <h3>Dépannage résolu</h3>
+          <h3 data-i18n="proj.grr.h3.troubleshoot">Dépannage résolu</h3>
           <ul>
-            <li>Port 80 occupé (Skype, IIS) → identification et libération du port</li>
-            <li>Erreur 403 Apache → correction des droits d'accès (<code>Require all granted</code>)</li>
-            <li>Accès réseau impossible → configuration VirtualHost + règles pare-feu</li>
+            <li data-i18n="proj.grr.fix.1">Port 80 occupé (Skype, IIS) → identification et libération du port</li>
+            <li data-i18n="proj.grr.fix.2">Erreur 403 Apache → correction des droits d'accès (<code>Require all granted</code>)</li>
+            <li data-i18n="proj.grr.fix.3">Accès réseau impossible → configuration VirtualHost + règles pare-feu</li>
           </ul>
 
-          <h3>Résultat</h3>
-          <p>
+          <h3 data-i18n="proj.h3.results">Résultat</h3>
+          <p data-i18n="proj.grr.result.p1">
             Le GRR est accessible depuis tous les postes du réseau interne via <code>http://infra56/reservations</code>. Un guide d'installation complet a été remis pour faciliter la reprise du service.
           </p>
 
@@ -88,17 +88,17 @@
 
         <aside class="detail-sidebar">
           <div class="card meta-box">
-            <h4>Infos projet</h4>
+            <h4 data-i18n="proj.sidebar.infos">Infos projet</h4>
             <div class="meta-rows">
-              <div class="meta-row"><span>📅</span><span>2024–2025</span></div>
-              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan</span></div>
-              <div class="meta-row"><span>📍</span><span>Vannes (56)</span></div>
-              <div class="meta-row"><span>🎓</span><span>BTS SIO SLAM — AFTEC</span></div>
-              <div class="meta-row"><span>📁</span><span>Livrables : GRR opérationnel + documentation</span></div>
+              <div class="meta-row"><span>📅</span><span data-i18n="proj.grr.meta.date">2024–2025</span></div>
+              <div class="meta-row"><span>🏢</span><span data-i18n="proj.grr.meta.org">DSDEN du Morbihan</span></div>
+              <div class="meta-row"><span>📍</span><span data-i18n="proj.grr.meta.location">Vannes (56)</span></div>
+              <div class="meta-row"><span>🎓</span><span data-i18n="proj.grr.meta.dossier">BTS SIO SLAM — AFTEC</span></div>
+              <div class="meta-row"><span>📁</span><span data-i18n="proj.grr.meta.deliverable">Livrables : GRR opérationnel + documentation</span></div>
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Stack</h4>
+            <h4 data-i18n="proj.sidebar.stack">Stack</h4>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="tag tag-blue">PHP</span>
               <span class="tag tag-blue">MySQL</span>
@@ -109,14 +109,14 @@
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Autres projets de stage</h4>
+            <h4 data-i18n="proj.sidebar.other.stage">Autres projets de stage</h4>
             <div style="display:flex; flex-direction:column; gap:8px;">
               <a href="stage-drasi.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Site DRASI →</a>
               <a href="stage-nommage.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Nommage des postes →</a>
               <a href="stage-remp.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">REMP →</a>
             </div>
           </div>
-          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;" data-i18n="proj.sidebar.all">← Tous les projets</a>
         </aside>
       </div>
 

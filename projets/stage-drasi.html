@@ -40,10 +40,10 @@
     <div class="container">
 
       <div class="proj-detail-top reveal">
-        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <a href="index.html" class="back-link" data-i18n="proj.back">← Retour aux projets</a>
         <div style="margin-bottom:14px;">
           <span class="tag tag-lime" style="display:inline-block; margin-bottom:10px;">Stage — DSDEN du Morbihan · Dossier E5</span>
-          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;">En cours</span>
+          <span class="tag tag-orange" style="display:inline-block; margin-bottom:10px; margin-left:6px;" data-i18n="proj.inprogress">En cours</span>
         </div>
         <h1 style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:12px;">Site vitrine DRASI</h1>
         <p style="max-width:640px; font-size:1rem;">
@@ -61,47 +61,47 @@
       <div class="detail-grid reveal">
         <div class="detail-content">
 
-          <h3>Contexte</h3>
-          <p>
+          <h3 data-i18n="proj.h3.context">Contexte</h3>
+          <p data-i18n="proj.drasi.context.p1">
             Développé lors d'un stage de 6 semaines à la DSDEN du Morbihan, ce site a été réalisé en binôme (deux stagiaires BTS SIO) sous la supervision du Responsable DSI. Le projet constitue le Dossier E5 du BTS SIO SLAM.
           </p>
-          <p>
+          <p data-i18n="proj.drasi.context.p2">
             Objectif : créer un site vitrine 100% statique (HTML/CSS/JS vanilla + PHP pour le formulaire) présentant l'équipe, les missions, le périmètre d'intervention et les services de la DRASI. Conformité obligatoire avec la charte graphique de l'Académie de Rennes.
           </p>
 
-          <h3>Pages réalisées</h3>
+          <h3 data-i18n="proj.drasi.h3.pages">Pages réalisées</h3>
           <ul>
-            <li>Accueil — présentation générale de la DRASI</li>
-            <li>Notre histoire — historique du service (ex-DSII)</li>
-            <li>Nos équipes — membres et rôles</li>
-            <li>Nos missions — périmètre d'intervention</li>
-            <li>Notre périmètre — carte interactive (Leaflet.js)</li>
-            <li>Services opérés — liste des services gérés</li>
-            <li>Comitologie — gouvernance</li>
-            <li>Nous contacter — formulaire sécurisé (reCAPTCHA v2 + PHP)</li>
+            <li data-i18n="proj.drasi.page.1">Accueil — présentation générale de la DRASI</li>
+            <li data-i18n="proj.drasi.page.2">Notre histoire — historique du service (ex-DSII)</li>
+            <li data-i18n="proj.drasi.page.3">Nos équipes — membres et rôles</li>
+            <li data-i18n="proj.drasi.page.4">Nos missions — périmètre d'intervention</li>
+            <li data-i18n="proj.drasi.page.5">Notre périmètre — carte interactive (Leaflet.js)</li>
+            <li data-i18n="proj.drasi.page.6">Services opérés — liste des services gérés</li>
+            <li data-i18n="proj.drasi.page.7">Comitologie — gouvernance</li>
+            <li data-i18n="proj.drasi.page.8">Nous contacter — formulaire sécurisé (reCAPTCHA v2 + PHP)</li>
           </ul>
 
-          <h3>Points techniques notables</h3>
+          <h3 data-i18n="proj.drasi.h3.technical">Points techniques notables</h3>
           <ul>
-            <li>Architecture composants : header, footer et cookie banner chargés via <code>fetch()</code> pour éviter la duplication</li>
-            <li>Carte interactive du périmètre géographique avec <strong>Leaflet.js</strong></li>
-            <li>Formulaire de contact sécurisé : reCAPTCHA v2, validation PHP côté serveur, envoi par <code>mail()</code></li>
-            <li>Système d'analytics maison (RGPD-compliant) : pages visitées, temps passé, sources — stockage localStorage, export CSV</li>
-            <li>Conformité charte graphique Académie de Rennes (couleurs, typos, logo Marianne)</li>
-            <li>Tests multi-navigateurs : Chrome, Firefox, Edge, Safari — audit Lighthouse</li>
-            <li>Déploiement Apache 2.4 Linux en production, versionné sur GitHub</li>
-            <li>Accessibilité : balises sémantiques, contrastes WCAG, navigation clavier</li>
+            <li data-i18n="proj.drasi.tech.1">Architecture composants : header, footer et cookie banner chargés via <code>fetch()</code> pour éviter la duplication</li>
+            <li data-i18n="proj.drasi.tech.2">Carte interactive du périmètre géographique avec <strong>Leaflet.js</strong></li>
+            <li data-i18n="proj.drasi.tech.3">Formulaire de contact sécurisé : reCAPTCHA v2, validation PHP côté serveur, envoi par <code>mail()</code></li>
+            <li data-i18n="proj.drasi.tech.4">Système d'analytics maison (RGPD-compliant) : pages visitées, temps passé, sources — stockage localStorage, export CSV</li>
+            <li data-i18n="proj.drasi.tech.5">Conformité charte graphique Académie de Rennes (couleurs, typos, logo Marianne)</li>
+            <li data-i18n="proj.drasi.tech.6">Tests multi-navigateurs : Chrome, Firefox, Edge, Safari — audit Lighthouse</li>
+            <li data-i18n="proj.drasi.tech.7">Déploiement Apache 2.4 Linux en production, versionné sur GitHub</li>
+            <li data-i18n="proj.drasi.tech.8">Accessibilité : balises sémantiques, contrastes WCAG, navigation clavier</li>
           </ul>
 
-          <h3>Sécurité</h3>
+          <h3 data-i18n="proj.drasi.h3.security">Sécurité</h3>
           <ul>
-            <li>HTTPS avec certificat SSL, cookies httpOnly + SameSite</li>
-            <li>Headers Apache : X-Frame-Options, X-XSS-Protection, Content-Security-Policy</li>
-            <li>reCAPTCHA v2 sur le formulaire de contact</li>
-            <li>Validation double : client (HTML5) + serveur (PHP)</li>
+            <li data-i18n="proj.drasi.sec.1">HTTPS avec certificat SSL, cookies httpOnly + SameSite</li>
+            <li data-i18n="proj.drasi.sec.2">Headers Apache : X-Frame-Options, X-XSS-Protection, Content-Security-Policy</li>
+            <li data-i18n="proj.drasi.sec.3">reCAPTCHA v2 sur le formulaire de contact</li>
+            <li data-i18n="proj.drasi.sec.4">Validation double : client (HTML5) + serveur (PHP)</li>
           </ul>
 
-          <h3>Aperçus du projet</h3>
+          <h3 data-i18n="proj.h3.screenshots">Aperçus du projet</h3>
           <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
             <div>
               <img src="../assets/img/stage/DRASI1.png" alt="Page d'accueil du site DRASI" loading="lazy" />
@@ -126,18 +126,18 @@
 
         <aside class="detail-sidebar">
           <div class="card meta-box">
-            <h4>Infos projet</h4>
+            <h4 data-i18n="proj.sidebar.infos">Infos projet</h4>
             <div class="meta-rows">
-              <div class="meta-row"><span>📅</span><span>Déc. 2024 – Jan. 2025 (6 sem.)</span></div>
-              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan — DRASI</span></div>
-              <div class="meta-row"><span>📍</span><span>Vannes (56)</span></div>
-              <div class="meta-row"><span>👥</span><span>2 stagiaires BTS SIO</span></div>
-              <div class="meta-row"><span>👔</span><span>Commanditaire : Responsable DSI</span></div>
-              <div class="meta-row"><span>🎓</span><span>Dossier E5 — BTS SIO SLAM</span></div>
+              <div class="meta-row"><span>📅</span><span data-i18n="proj.drasi.meta.date">Déc. 2024 – Jan. 2025 (6 sem.)</span></div>
+              <div class="meta-row"><span>🏢</span><span data-i18n="proj.drasi.meta.org">DSDEN du Morbihan — DRASI</span></div>
+              <div class="meta-row"><span>📍</span><span data-i18n="proj.drasi.meta.location">Vannes (56)</span></div>
+              <div class="meta-row"><span>👥</span><span data-i18n="proj.drasi.meta.team">2 stagiaires BTS SIO</span></div>
+              <div class="meta-row"><span>👔</span><span data-i18n="proj.drasi.meta.client">Commanditaire : Responsable DSI</span></div>
+              <div class="meta-row"><span>🎓</span><span data-i18n="proj.drasi.meta.dossier">Dossier E5 — BTS SIO SLAM</span></div>
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Stack</h4>
+            <h4 data-i18n="proj.sidebar.stack">Stack</h4>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="tag tag-blue">HTML5</span>
               <span class="tag tag-blue">CSS3</span>
@@ -150,14 +150,14 @@
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Autres projets de stage</h4>
+            <h4 data-i18n="proj.sidebar.other.stage">Autres projets de stage</h4>
             <div style="display:flex; flex-direction:column; gap:8px;">
               <a href="stage-grr.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">GRR →</a>
               <a href="stage-nommage.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Nommage des postes →</a>
               <a href="stage-remp.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">REMP →</a>
             </div>
           </div>
-          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;" data-i18n="proj.sidebar.all">← Tous les projets</a>
         </aside>
       </div>
 

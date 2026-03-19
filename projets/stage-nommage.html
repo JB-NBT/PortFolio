@@ -40,7 +40,7 @@
     <div class="container">
 
       <div class="proj-detail-top reveal">
-        <a href="index.html" class="back-link">← Retour aux projets</a>
+        <a href="index.html" class="back-link" data-i18n="proj.back">← Retour aux projets</a>
         <div style="margin-bottom:14px;">
           <span class="tag tag-lime" style="display:inline-block; margin-bottom:8px;">Stage — DSDEN du Morbihan</span>
           <span class="tag tag-orange" style="display:inline-block; margin-bottom:8px; margin-left:6px;">Priorité haute</span>
@@ -58,40 +58,40 @@
       <div class="detail-grid reveal">
         <div class="detail-content">
 
-          <h3>Contexte &amp; problème</h3>
-          <p>
+          <h3 data-i18n="proj.h3.context.pb">Contexte &amp; problème</h3>
+          <p data-i18n="proj.nommage.context.p1">
             Les techniciens de la DSDEN nommaient manuellement chaque nouveau poste informatique lors de son intégration au réseau. Cette opération était source d'erreurs (fautes de frappe, doublons, incohérences avec l'inventaire). Le service avait besoin d'un outil automatisé respectant les conventions de nommage de l'Éducation Nationale.
           </p>
-          <p>
+          <p data-i18n="proj.nommage.context.p2">
             Projet réalisé en binôme avec un autre stagiaire, sous la direction du Responsable Adjoint DSI. Priorité haute — service qui n'existait pas auparavant.
           </p>
 
-          <h3>Ce que j'ai réalisé</h3>
+          <h3 data-i18n="proj.nommage.h3.done">Ce que j'ai réalisé</h3>
           <ul>
-            <li>Apprentissage de <strong>Grist</strong> — outil de base de données collaboratif hébergé sur Toutatice (EN)</li>
-            <li>Conception des tables de référence : OS, modèles matériels, circonscriptions, EPLE, département</li>
-            <li>Développement du formulaire de saisie Grist accessible aux techniciens</li>
+            <li data-i18n="proj.nommage.done.1">Apprentissage de <strong>Grist</strong> — outil de base de données collaboratif hébergé sur Toutatice (EN)</li>
+            <li data-i18n="proj.nommage.done.2">Conception des tables de référence : OS, modèles matériels, circonscriptions, EPLE, département</li>
+            <li data-i18n="proj.nommage.done.3">Développement du formulaire de saisie Grist accessible aux techniciens</li>
             <li>Formule Python dans Grist (<code>generer_code_resu()</code>) pour générer automatiquement un nom unique</li>
-            <li>Logique d'incrémentation : le nom généré intègre le département, l'identifiant de circonscription et un numéro séquentiel auto-incrémenté sans doublon</li>
-            <li>Export CSV compatible MDT Web pour le déploiement Windows</li>
-            <li>Tests sur poste dédié, sessions de test par types d'utilisateurs</li>
-            <li>Documentation technique et guide utilisateur</li>
+            <li data-i18n="proj.nommage.done.5">Logique d'incrémentation : le nom généré intègre le département, l'identifiant de circonscription et un numéro séquentiel auto-incrémenté sans doublon</li>
+            <li data-i18n="proj.nommage.done.6">Export CSV compatible MDT Web pour le déploiement Windows</li>
+            <li data-i18n="proj.nommage.done.7">Tests sur poste dédié, sessions de test par types d'utilisateurs</li>
+            <li data-i18n="proj.nommage.done.8">Documentation technique et guide utilisateur</li>
           </ul>
 
-          <h3>La formule Python (Grist)</h3>
-          <p>
+          <h3 data-i18n="proj.nommage.h3.formula">La formule Python (Grist)</h3>
+          <p data-i18n="proj.nommage.formula.p1">
             Le cœur du projet est une formule Python écrite directement dans Grist. Elle construit le nom du poste en :
           </p>
           <ul>
-            <li>Récupérant le numéro de département (56) et le nom de la circonscription</li>
-            <li>Extrayant les 3 derniers caractères du nom de circonscription et l'identifiant entre parenthèses</li>
-            <li>Parcourant toutes les entrées existantes pour collecter les numéros déjà utilisés dans le même groupe (même département + même circonscription)</li>
-            <li>Attribuant le plus petit numéro disponible (1–99, formaté en 2 chiffres)</li>
+            <li data-i18n="proj.nommage.formula.1">Récupérant le numéro de département (56) et le nom de la circonscription</li>
+            <li data-i18n="proj.nommage.formula.2">Extrayant les 3 derniers caractères du nom de circonscription et l'identifiant entre parenthèses</li>
+            <li data-i18n="proj.nommage.formula.3">Parcourant toutes les entrées existantes pour collecter les numéros déjà utilisés dans le même groupe (même département + même circonscription)</li>
+            <li data-i18n="proj.nommage.formula.4">Attribuant le plus petit numéro disponible (1–99, formaté en 2 chiffres)</li>
             <li>Retournant le nom final : <code>56-XXX-IDEN-01</code></li>
           </ul>
 
           <!-- Captures d'écran -->
-          <h3>Aperçus du projet</h3>
+          <h3 data-i18n="proj.h3.screenshots">Aperçus du projet</h3>
           <div class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
             <div>
               <img src="../assets/img/stage/nommage-form.png" alt="Formulaire de nommage PC" loading="lazy" />
@@ -115,17 +115,17 @@
 
         <aside class="detail-sidebar">
           <div class="card meta-box">
-            <h4>Infos projet</h4>
+            <h4 data-i18n="proj.sidebar.infos">Infos projet</h4>
             <div class="meta-rows">
-              <div class="meta-row"><span>📅</span><span>Juillet 2025 (~10 jours)</span></div>
-              <div class="meta-row"><span>🏢</span><span>DSDEN du Morbihan — DSI</span></div>
-              <div class="meta-row"><span>👥</span><span>2 stagiaires + Responsable Adjoint DSI</span></div>
-              <div class="meta-row"><span>⚠️</span><span>Priorité haute</span></div>
-              <div class="meta-row"><span>🎓</span><span>BTS SIO SLAM — AFTEC</span></div>
+              <div class="meta-row"><span>📅</span><span data-i18n="proj.nommage.meta.date">Juillet 2025 (~10 jours)</span></div>
+              <div class="meta-row"><span>🏢</span><span data-i18n="proj.nommage.meta.org">DSDEN du Morbihan — DSI</span></div>
+              <div class="meta-row"><span>👥</span><span data-i18n="proj.nommage.meta.team">2 stagiaires + Responsable Adjoint DSI</span></div>
+              <div class="meta-row"><span>⚠️</span><span data-i18n="proj.nommage.meta.priority">Priorité haute</span></div>
+              <div class="meta-row"><span>🎓</span><span data-i18n="proj.nommage.meta.dossier">BTS SIO SLAM — AFTEC</span></div>
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Stack</h4>
+            <h4 data-i18n="proj.sidebar.stack">Stack</h4>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="tag tag-green">Python (Grist formulas)</span>
               <span class="tag tag-gray">Grist</span>
@@ -135,14 +135,14 @@
             </div>
           </div>
           <div class="card meta-box">
-            <h4>Autres projets de stage</h4>
+            <h4 data-i18n="proj.sidebar.other.stage">Autres projets de stage</h4>
             <div style="display:flex; flex-direction:column; gap:8px;">
               <a href="stage-drasi.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">Site DRASI →</a>
               <a href="stage-grr.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">GRR →</a>
               <a href="stage-remp.html" class="btn btn-ghost" style="justify-content:center; font-size:0.84rem;">REMP →</a>
             </div>
           </div>
-          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;">← Tous les projets</a>
+          <a href="index.html" class="btn btn-ghost" style="width:100%; justify-content:center;" data-i18n="proj.sidebar.all">← Tous les projets</a>
         </aside>
       </div>
 
