@@ -404,8 +404,18 @@ const i18n = {
     /* CV */
     "cv.title"    : "Mon CV",
     "cv.subtitle" : "Téléchargez mon curriculum vitae complet",
-    "cv.download" : "Télécharger le CV (PDF)",
-    "cv.view"     : "Voir en plein écran",
+    "cv.download" : "⬇ Télécharger le CV (PDF)",
+    "cv.view"     : "👁 Voir en plein écran",
+    "cv.role"     : "BTS SIO option SLAM",
+    "cv.seeking"  : "En recherche d'alternance",
+    "cv.keypoints": "Points clés",
+    "cv.kp.1"     : "BTS SIO SLAM — AFTEC Vannes (en cours)",
+    "cv.kp.2"     : "Licence Math Informatique — UBS Vannes",
+    "cv.kp.3"     : "Stage DSDEN du Morbihan — 10 semaines",
+    "cv.kp.4"     : "12+ technologies maîtrisées",
+    "cv.kp.5"     : "Français, Anglais, Espagnol",
+    "cv.kp.6"     : "Permis B — véhiculé",
+    "cv.kp.7"     : "Contrat éligible aide à l'embauche (2 000 €)",
 
     /* COOKIE */
     "cookie.title"  : "Gestion des cookies",
@@ -820,8 +830,18 @@ const i18n = {
     /* CV */
     "cv.title"    : "My Resume",
     "cv.subtitle" : "Download my full curriculum vitae",
-    "cv.download" : "Download Resume (PDF)",
-    "cv.view"     : "View fullscreen",
+    "cv.download" : "⬇ Download Resume (PDF)",
+    "cv.view"     : "👁 View fullscreen",
+    "cv.role"     : "BTS SIO – SLAM track",
+    "cv.seeking"  : "Looking for an apprenticeship",
+    "cv.keypoints": "Key points",
+    "cv.kp.1"     : "BTS SIO SLAM — AFTEC Vannes (ongoing)",
+    "cv.kp.2"     : "Maths & Computer Science degree — UBS Vannes",
+    "cv.kp.3"     : "Internship at DSDEN du Morbihan — 10 weeks",
+    "cv.kp.4"     : "12+ technologies mastered",
+    "cv.kp.5"     : "French, English, Spanish",
+    "cv.kp.6"     : "Driving licence — own car",
+    "cv.kp.7"     : "Eligible for hiring grant (€2,000)",
 
     /* COOKIE */
     "cookie.title"  : "Cookie settings",
