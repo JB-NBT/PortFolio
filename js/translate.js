@@ -359,6 +359,8 @@ const i18n = {
     "proj.money.meta.team"       : "Solo",
     "proj.money.meta.target"     : "Minecraft Java Edition",
     "proj.money.meta.api"        : "Minecraft Forge API",
+    "proj.money.published"       : "Publié",
+    "proj.money.cta"             : "Voir sur CurseForge",
 
     /* PARCOURS */
     "parcours.title"    : "Mon parcours",
@@ -773,6 +775,8 @@ const i18n = {
     "proj.money.meta.team"       : "Solo",
     "proj.money.meta.target"     : "Minecraft Java Edition",
     "proj.money.meta.api"        : "Minecraft Forge API",
+    "proj.money.published"       : "Published",
+    "proj.money.cta"             : "View on CurseForge",
 
     /* PARCOURS */
     "parcours.title"    : "My background",
