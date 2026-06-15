@@ -120,7 +120,7 @@
 })();
 
 /* ══════════════════════════════════════════
-   COOKIE MODAL — centré + bouton refus
+   COOKIE MODAL - centré + bouton refus
 ══════════════════════════════════════════ */
 (function initCookie() {
   const banner    = document.getElementById('cookieBanner');
